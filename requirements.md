@@ -1,4 +1,4 @@
-// this document is incomplete please add more to it
+// this document is incomplete please add more to it <br>
 // it good to use as a check list during the project and final report
 
 # block diagram of project
