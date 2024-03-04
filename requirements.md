@@ -37,7 +37,7 @@
 | interface with wireless comms  | hard      |
 | needs x amount of ram          | hard      |
 | has a peak current draw of x   | hard      |
-| has an idel current draw of x  | hard      |
+| has an idle current draw of x  | hard      |
 | interface with a camera        | soft      |
 | interface with a comms modules | soft      |
 | output an analogue voltage     | soft      |
