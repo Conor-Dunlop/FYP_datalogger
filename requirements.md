@@ -98,6 +98,7 @@ base stations/access points? - if needed
 | attatch to rocks                         | soft      |
 | attatch to some common mounting standard | soft      |
 | can be made to be seen or hidden         | soft      |
+| mounting plate for top of fances         | hard      |
 | easy to carry/lug                        | hard      |
 
 # storage/database requiremenets
