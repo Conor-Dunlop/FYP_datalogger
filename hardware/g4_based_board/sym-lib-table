@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "parts_not_in_kicad")(type "KiCad")(uri "//TRUENAS/logans-data/ENEL400/enel400-data-logger/hardware/libs/parts_not_in_kicad.kicad_sym")(options "")(descr ""))
+)
