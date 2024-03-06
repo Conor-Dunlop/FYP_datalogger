@@ -1,4 +1,4 @@
-// this document is incomplete please add more to it
+// this document is incomplete please add more to it <br>
 // it good to use as a check list during the project and final report
 
 # block diagram of project
@@ -24,23 +24,23 @@
 
 # micro controller requirements
 
-| requirements                  | hard/soft | notes                                                                    |
-| ----------------------------- | --------- | ------------------------------------------------------------------------ |
-| sleep mode                    | hard      | required to extend the battery life                                      |
-| deep sleep mode               | soft      | ""                                                                       |
-| at least 1 spi bus            | hard      | needed for comms as well as other digital based sensors                  |
-| at least 1 I2C bus            | hard      | needed for digital based sensors                                         |
-| at least x PWMs               | hard      | needed for actuators leds, buzzers, servos, motors                       |
-| at least x ADC                | hard      | needed to mesure sensors                                                 |
-| at least x gpio               | hard      | for multiplexers and other digital/status interfaces                     |
-| can be powered from a battery | hard      | needed for remote operation                                              |
-| interface with wireless comms | hard      | required to meet for function req                                        |
-| needs x amount of ram         | hard      | for running the program and caching data to be sent                      |
-| has a peak current draw of x  | hard      | estamating battery life                                                  |
-| has an idel current draw of x | hard      | estamating battery life                                                  |
-| interface with a camera       | soft      | soft requirement wanted for taking pictures of birds and insects         |
-| interface with comms modules  | soft      | soft since making a comms sheild isnt strictly necessary                 |
-| output an analogue voltage    | soft      | should be good to use with like a speaker for bird sounds/warning noises |
+| requirements                   | hard/soft |
+| ------------------------------ | --------- |
+| sleep mode                     | hard      |
+| deep sleep mode                | soft      |
+| at least 1 spi bus             | hard      |
+| at least 1 I2C bus             | hard      |
+| at least x PWMs                | hard      |
+| at least x ADC                 | hard      |
+| at least x gpio                | hard      |
+| can be powered from a battery  | hard      |
+| interface with wireless comms  | hard      |
+| needs x amount of ram          | hard      |
+| has a peak current draw of x   | hard      |
+| has an idel current draw of x  | hard      |
+| interface with a camera        | soft      |
+| interface with a comms modules | soft      |
+| output an analogue voltage     | soft      |
 
 # comms requirements
 
@@ -97,6 +97,7 @@ base stations/access points? - if needed
 | attatch to rocks                         | soft      |
 | attatch to some common mounting standard | soft      |
 | can be made to be seen or hidden         | soft      |
+| mounting plate for top of fances         | hard      |
 | easy to carry/lug                        | hard      |
 
 # storage/database requiremenets
