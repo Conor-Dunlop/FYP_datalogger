@@ -7,57 +7,56 @@
 
 # datalogger requirements
 
-| requirements                          | hard/soft |
-| ------------------------------------- | --------- |
-| can handle large tempureture change   | hard      |
-| can handle drastic changes in weather | hard      |
-| less than $ to produce                | hard      |
-| less than $ to run per x time         | hard      |
+| requirements                          | hard/soft | notes                                                                              |
+| ------------------------------------- | --------- | ---------------------------------------------------------------------------------- |
+| can handle large tempureture change   | hard      | this is done as its required to be outside which can experience large temp changes |
+| can handle drastic changes in weather | hard      | "                                                                              "   |
+| less than $ to produce                | hard      | this is product cost not development cost                                          |
+| less than $ to run per x time         | hard      | this for any subscription based services that might be required                    |
 
 # high level testing requirements
 
-| requirements                       | hard/soft |
-| ---------------------------------- | --------- |
-| can recreate the bug trapper       | soft      |
+| requirements                       | hard/soft | notes                                            |
+| ---------------------------------- | --------- | ------------------------------------------------ |
+| can recreate the bug trapper       | soft      | these are functional tests for product baselines |
 | can take pictures at set intervals | soft      |
 | measure weather data               | soft      |
 
 # micro controller requirements
 
-| requirements                   | hard/soft |
-| ------------------------------ | --------- |
-| sleep mode                     | hard      |
-| deep sleep mode                | soft      |
-| at least 1 spi bus             | hard      |
-| at least 1 I2C bus             | hard      |
-| at least x PWMs                | hard      |
-| at least x ADC                 | hard      |
-| at least x gpio                | hard      |
-| can be powered from a battery  | hard      |
-| interface with wireless comms  | hard      |
-| needs x amount of ram          | hard      |
-| has a peak current draw of x   | hard      |
-| has an idel current draw of x  | hard      |
-| interface with a camera        | soft      |
-| interface with a comms modules | soft      |
-| output an analogue voltage     | soft      |
+| requirements                  | hard/soft | notes                                                                    |
+| ----------------------------- | --------- | ------------------------------------------------------------------------ |
+| sleep mode                    | hard      | required to extend the battery life                                      |
+| deep sleep mode               | soft      | ""                                                                       |
+| at least 1 spi bus            | hard      | needed for comms as well as other digital based sensors                  |
+| at least 1 I2C bus            | hard      | needed for digital based sensors                                         |
+| at least x PWMs               | hard      | needed for actuators leds, buzzers, servos, motors                       |
+| at least x ADC                | hard      | needed to mesure sensors                                                 |
+| at least x gpio               | hard      | for multiplexers and other digital/status interfaces                     |
+| can be powered from a battery | hard      | needed for remote operation                                              |
+| interface with wireless comms | hard      | required to meet for function req                                        |
+| needs x amount of ram         | hard      | for running the program and caching data to be sent                      |
+| has a peak current draw of x  | hard      | estamating battery life                                                  |
+| has an idel current draw of x | hard      | estamating battery life                                                  |
+| interface with a camera       | soft      | soft requirement wanted for taking pictures of birds and insects         |
+| interface with comms modules  | soft      | soft since making a comms sheild isnt strictly necessary                 |
+| output an analogue voltage    | soft      | should be good to use with like a speaker for bird sounds/warning noises |
 
 # comms requirements
 
-| requirements                                      | hard/soft |
-| ------------------------------------------------- | --------- |
-| sleep mode                                        | hard      |
-| 2 way comms                                       | soft      |
-| mesh networking with other dataloggers            | soft      |
-| wifi                                              | hard      |
-| bluetooth                                         | hard      |
-| narrowband (cellular)                             | hard      |
-| loRaWan                                           | hard      |
-| iridium sateilite comms                           | soft      |
-| send data to some cloud based storage/data portal | hard      |
-| support multiple over the air comms               | hard      |
-| can connect to pre existing networks              | hard      |
-| can connect to pre existing networks              | hard      |
+| requirements                                      | hard/soft | notes                                                                       |
+| ------------------------------------------------- | --------- | --------------------------------------------------------------------------- |
+| sleep mode                                        | hard      | required to extend the battery life                                         |
+| 2 way comms                                       | soft      | for receiving sensor data and activating actuators                          |
+| mesh networking with other dataloggers            | soft      | for when a narrowabnd interface or a loraWan network isnt available         |
+| wifi                                              | soft      | useful for operating within building or urbanized areas with local networks |
+| bluetooth                                         | soft      | ""                                                                          |
+| narrowband (cellular)                             | hard      | for when a loraWan network isnt doesnt exist and when out in the bush       |
+| loRaWan                                           | hard      | needed                                                                      |
+| iridium sateilite comms                           | soft      | for when loraWan and cellular isnt practical                                |
+| send data to some cloud based storage/data portal | hard      | need to access/store data somehow                                           |
+| support multiple over the air comms               | hard      | makes it more modular                                                       |
+| can connect to pre existing networks              | hard      | so the product does not need its own network to be setup                    |
 
 base stations/access points? - if needed
 
