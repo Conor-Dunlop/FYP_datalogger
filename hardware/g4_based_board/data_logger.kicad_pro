@@ -596,6 +596,14 @@
     [
       "b63f81bc-3201-4d22-bdc3-2e8eb19f6492",
       "interface"
+    ],
+    [
+      "94aa18ec-ca43-48bb-9ac5-de3a297c59dd",
+      "thermalcouples"
+    ],
+    [
+      "3e5ba35e-4846-4163-b2e5-060de6c34a85",
+      "comms_interface"
     ]
   ],
   "text_variables": {}

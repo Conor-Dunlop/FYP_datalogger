@@ -839,7 +839,45 @@
 		)
 	)
 	(sheet
-		(at 76.2 22.86)
+		(at 80.645 46.355)
+		(size 30.48 22.225)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3e5ba35e-4846-4163-b2e5-060de6c34a85")
+		(property "Sheetname" "comms_interface"
+			(at 80.645 45.6434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "comms_interface.kicad_sch"
+			(at 80.645 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 80.645 24.13)
 		(size 25.4 12.065)
 		(fields_autoplaced yes)
 		(stroke
@@ -851,7 +889,7 @@
 		)
 		(uuid "43f46613-cc82-4961-a27a-4bcd09476247")
 		(property "Sheetname" "power"
-			(at 76.2 22.1484 0)
+			(at 80.645 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -860,7 +898,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 76.2 35.5096 0)
+			(at 80.645 36.7796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -872,6 +910,44 @@
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 73.025)
+		(size 30.48 23.495)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "94aa18ec-ca43-48bb-9ac5-de3a297c59dd")
+		(property "Sheetname" "thermalcouples"
+			(at 81.28 72.3134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "thermalcouples.kicad_sch"
+			(at 81.28 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6"
+					(page "7")
 				)
 			)
 		)
@@ -985,7 +1061,7 @@
 			(uuid "fd3fcb95-4f5a-4417-b6e6-f93fd1fd1487")
 		)
 		(pin "DAC2_OUT-ADC-GPIO-PWM" input
-			(at 71.12 90.17 0)
+			(at 71.12 136.525 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1005,7 +1081,7 @@
 			(uuid "28bf5ee3-ea5a-4386-85ab-b543bac0b707")
 		)
 		(pin "DAC1_OUT-ADC-GPIO-PWM" input
-			(at 71.12 92.71 0)
+			(at 71.12 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
