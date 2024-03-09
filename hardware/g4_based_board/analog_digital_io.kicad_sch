@@ -4,2346 +4,881 @@
 	(generator_version "8.0")
 	(uuid "55a2d832-5b81-4817-8367-93eb1b7af200")
 	(paper "A4")
-	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_Pin"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Power_Protection:RCLAMP0502B"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "RCLAMP0502B"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-416"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.semtech.com/products/circuit-protection/low-capacitance/rclamp0502b"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Low capacitance unidirectional dual ESD protection diode, SC-75"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "tvs unidirectional"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?416*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RCLAMP0502B_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 3.81) (xy 2.54 1.27) (xy 2.032 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.81) (xy 2.54 2.54) (xy 0 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "RCLAMP0502B_1_1"
-				(circle
-					(center -1.27 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.27) (xy 2.54 -3.81) (xy 2.032 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy 0 -1.27) (xy 2.54 -2.54) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "K1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "K2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Switch:SW_DIP_x01"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_DIP_x01"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "dip switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SW?DIP?x1*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_DIP_x01_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.127) (xy 2.3622 1.1684)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_DIP_x01_0_1"
-				(rectangle
-					(start -3.81 2.54)
-					(end 3.81 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SW_DIP_x01_1_1"
-				(pin passive line
-					(at -7.62 0 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Switch:SW_SPDT"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPDT_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Transistor_FET:DMN6075S"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "DMN6075S"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN6075S.pdf"
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "2.5A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "N-Channel MOSFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DMN6075S_0_1"
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "DMN6075S_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-	)
-	(junction
-		(at 161.925 113.665)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18a44189-0692-42b7-964a-e7081d372e21")
-	)
-	(junction
-		(at 167.005 116.205)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "56fb14a9-7113-4b74-a2d8-413409450dd1")
-	)
+	(lib_symbols)
 	(wire
 		(pts
-			(xy 154.305 113.665) (xy 161.925 113.665)
+			(xy 109.22 46.99) (xy 104.902 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0ca12563-c2a3-4a54-82b0-075bc7732d25")
+		(uuid "04b2658c-e9c4-49ed-9bd2-a17e75123f5f")
 	)
 	(wire
 		(pts
-			(xy 167.005 116.205) (xy 167.005 118.745)
+			(xy 109.22 98.044) (xy 104.902 98.044)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c15c4c0-626e-4867-9ee7-7350fc991d09")
+		(uuid "21ac5cfe-f1bd-4703-bf87-a06478290073")
 	)
 	(wire
 		(pts
-			(xy 161.925 113.665) (xy 170.18 113.665)
+			(xy 109.22 72.39) (xy 104.902 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f11c058-d603-47f2-b66e-16c93a745788")
+		(uuid "2c862953-50db-4ff2-a1cd-305b3eeee321")
 	)
 	(wire
 		(pts
-			(xy 93.98 78.105) (xy 93.98 83.82)
+			(xy 109.22 89.662) (xy 104.902 89.662)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "593c4820-119a-4138-bf91-5211ed39c239")
+		(uuid "367f76d4-d8c6-4948-8327-a90b7fd1e49f")
 	)
 	(wire
 		(pts
-			(xy 161.925 113.665) (xy 161.925 118.745)
+			(xy 109.474 114.808) (xy 105.156 114.808)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5faba643-5d2d-4c83-8328-35116514557e")
+		(uuid "47b06063-576e-49c2-880b-57ffc039270f")
 	)
 	(wire
 		(pts
-			(xy 156.845 67.31) (xy 156.845 67.945)
+			(xy 109.22 81.026) (xy 104.902 81.026)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79461bcc-661d-4a20-95cf-48d891875987")
+		(uuid "7f55e2f6-a1da-4b09-8325-07b72e862192")
 	)
 	(wire
 		(pts
-			(xy 154.305 94.615) (xy 154.305 113.665)
+			(xy 109.22 64.008) (xy 104.902 64.008)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "85be9e01-5d48-4504-a3fa-db6d424a0dac")
+		(uuid "82f737fb-05cb-4060-804b-88ce9b160e2b")
 	)
 	(wire
 		(pts
-			(xy 170.18 116.205) (xy 167.005 116.205)
+			(xy 109.22 106.426) (xy 104.902 106.426)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8eeb9034-810c-467a-a7cd-17ba9ac6c67a")
+		(uuid "c6c43f6d-b058-46bb-ab2f-1a8cd418f268")
 	)
 	(wire
 		(pts
-			(xy 58.42 88.9) (xy 69.85 88.9)
+			(xy 109.474 140.208) (xy 105.156 140.208)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "927a5486-8688-4cee-b721-792d20552fa0")
+		(uuid "cdc5922b-cad3-4676-b555-4e9568f70982")
 	)
 	(wire
 		(pts
-			(xy 121.285 89.535) (xy 131.445 89.535)
+			(xy 109.22 55.626) (xy 104.902 55.626)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ff44b3f-0ddc-4187-878f-f67972b38597")
+		(uuid "d6ad0153-a12a-4717-90e6-fe789177f680")
 	)
 	(wire
 		(pts
-			(xy 151.765 64.135) (xy 151.765 67.945)
+			(xy 109.474 123.444) (xy 105.156 123.444)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a839e180-5144-4576-a2da-4356e01d4d0b")
+		(uuid "dee35e0f-f170-455c-987c-e367de946f13")
 	)
 	(wire
 		(pts
-			(xy 167.005 116.205) (xy 93.98 116.205)
+			(xy 109.474 131.826) (xy 105.156 131.826)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c54f73e7-cd73-440d-9e7b-4c2442df8796")
+		(uuid "e31b7a9e-75e4-4baf-94d3-b516eaeabae9")
 	)
-	(wire
-		(pts
-			(xy 154.305 78.105) (xy 154.305 84.455)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca8f52ec-24e4-45a8-a6b4-eca99991e23e")
-	)
-	(wire
-		(pts
-			(xy 91.44 64.135) (xy 91.44 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cda8fb24-5a8d-4519-b9d7-42a2e0f3f8f8")
-	)
-	(wire
-		(pts
-			(xy 85.09 88.9) (xy 86.36 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec0d6d45-40bc-4644-b0d3-ab420830403f")
-	)
-	(wire
-		(pts
-			(xy 93.98 116.205) (xy 93.98 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec18212a-a5f5-4692-ae17-9f54d436b609")
-	)
-	(wire
-		(pts
-			(xy 96.52 67.31) (xy 96.52 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f71e9fca-920f-47f8-b087-1833687435cf")
-	)
-	(label "sig_diff_1"
-		(at 121.285 89.535 0)
+	(hierarchical_label "GPIO-5"
+		(shape input)
+		(at 104.902 81.026 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right)
 		)
-		(uuid "cfbf91f8-8163-4337-bba1-208264937466")
+		(uuid "37c51a2d-e75f-4834-9813-034679c6acab")
 	)
-	(label "sig_diff_2"
-		(at 58.42 88.9 0)
+	(hierarchical_label "GPIO-10"
+		(shape input)
+		(at 105.156 123.444 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right)
 		)
-		(uuid "dd350658-1561-4f13-bc9a-af99018e9d2f")
+		(uuid "40d5ef41-7055-46b8-9c38-7f193a803ef8")
 	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 91.44 64.135 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(hierarchical_label "GPIO-11"
+		(shape input)
+		(at 105.156 131.826 180)
 		(fields_autoplaced yes)
-		(uuid "05da3ebb-7f87-4481-b31d-2f21a92ff31c")
-		(property "Reference" "#PWR096"
-			(at 91.44 67.945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "+3.3V"
-			(at 91.44 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 91.44 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56f3268b-cb71-47b0-820c-17ecf1f6229e")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "#PWR096")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "51fc2dd7-717f-4fd0-9302-6d8d5ce6fd93")
 	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 175.26 116.205 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(hierarchical_label "GPIO-9"
+		(shape input)
+		(at 105.156 114.808 180)
 		(fields_autoplaced yes)
-		(uuid "124c2bfe-8bab-4b07-99ce-1bd6c09e7dc9")
-		(property "Reference" "J13"
-			(at 176.53 113.6649 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 176.53 116.2049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 175.26 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 175.26 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9887ce82-473a-4c06-9205-7364db2d3ff8")
-		)
-		(pin "2"
-			(uuid "48815b3e-6514-4607-9336-e10d0fb07b25")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "55622502-1af3-47bd-9a1d-e0139d7c80b9")
 	)
-	(symbol
-		(lib_id "Transistor_FET:DMN6075S")
-		(at 91.44 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(hierarchical_label "GPIO-4"
+		(shape input)
+		(at 104.902 72.39 180)
 		(fields_autoplaced yes)
-		(uuid "2432e87d-f429-4942-8d8f-d2bdcce57d59")
-		(property "Reference" "Q6"
-			(at 97.79 87.6299 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67bd94a3-8b75-4bf9-a562-6d0d7ef388ae")
+	)
+	(hierarchical_label "GPIO-6"
+		(shape input)
+		(at 104.902 89.662 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6a123cee-3ba0-49bb-b4df-31efd4dc1b9f")
+	)
+	(hierarchical_label "GPIO-1"
+		(shape input)
+		(at 104.902 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87e06dec-33e6-4fcb-a798-7f20c7b4cc41")
+	)
+	(hierarchical_label "GPIO-8"
+		(shape input)
+		(at 104.902 106.426 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d78f0f8-d0a8-49b9-ba4c-d51799794c57")
+	)
+	(hierarchical_label "GPIO-7"
+		(shape input)
+		(at 104.902 98.044 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f6e1d27-0e65-471e-9256-4918581813a2")
+	)
+	(hierarchical_label "GPIO-12"
+		(shape input)
+		(at 105.156 140.208 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ae6ec05a-71fa-4c05-8f13-2a078672d8a8")
+	)
+	(hierarchical_label "GPIO-3"
+		(shape input)
+		(at 104.902 64.008 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da1eb28c-bc55-4e5f-b899-83d1261e060a")
+	)
+	(hierarchical_label "GPIO-2"
+		(shape input)
+		(at 104.902 55.626 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5369250-85a2-4b85-a4dc-6c88174c45ac")
+	)
+	(sheet
+		(at 109.22 103.886)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0470eb99-f78d-44c4-a3af-99363b0edda3")
+		(property "Sheetname" "gpio-connect7"
+			(at 109.22 103.1744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 108.2806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 109.22 106.426 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "b7435d07-5223-48fa-84ff-a6d3c3609901")
 		)
-		(property "Value" "DMN6075S"
-			(at 97.79 90.1699 0)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 87.122)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0c5dcce1-13d1-4e1b-9c68-2f6b32acedff")
+		(property "Sheetname" "gpio-connect5"
+			(at 109.22 86.4104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 91.5166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 109.22 89.662 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 96.52 90.805 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN6075S.pdf"
-			(at 96.52 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "2.5A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 91.44 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d29f3819-70cf-4ec0-8995-58ae77bfccdb")
-		)
-		(pin "3"
-			(uuid "2d09bc55-29bd-435a-9a26-158c51fedab7")
-		)
-		(pin "1"
-			(uuid "12e74dbf-e2cb-4980-9e36-6fcafecf68b1")
+			(uuid "291ec006-53fa-4963-b116-6ae5bca59258")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "Q6")
-					(unit 1)
+					(page "15")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Transistor_FET:DMN6075S")
-		(at 151.765 89.535 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(sheet
+		(at 109.474 129.286)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
-		(uuid "2fb5f241-cde7-4e45-9583-519b4ec80dec")
-		(property "Reference" "Q5"
-			(at 158.115 88.2649 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1573bd79-5555-47e0-9be6-230c66db34fe")
+		(property "Sheetname" "gpio-connect10"
+			(at 109.474 128.5744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.474 133.6806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 109.474 131.826 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "a353fb69-983e-4034-ba0a-afacf3b3ea0e")
 		)
-		(property "Value" "DMN6075S"
-			(at 158.115 90.8049 0)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 184.404 64.008)
+		(size 26.416 18.034)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "18781abb-79f1-4f5b-b807-9b2a1d084f50")
+		(property "Sheetname" "gpio-analog-amp"
+			(at 184.404 63.2964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio-analog-amp.kicad_sch"
+			(at 184.404 82.6266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "23")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 78.486)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3dfdb84b-6dc4-4886-b30a-e6a3b5c62138")
+		(property "Sheetname" "gpio-connect4"
+			(at 109.22 77.7744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 82.8806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 109.22 81.026 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+			(uuid "e67b9e99-f0cb-4e48-9d5f-8fbe35a273c3")
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 156.845 91.44 0)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 53.086)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "47c75381-6904-4ea2-8134-7aeca0045b3c")
+		(property "Sheetname" "gpio-connect1"
+			(at 109.22 52.3744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 57.4806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 109.22 55.626 180)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+			(uuid "b0496aba-a5fc-42b6-8169-5e7e72e182d1")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "7")
+				)
 			)
 		)
-		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN6075S.pdf"
-			(at 156.845 93.345 0)
+	)
+	(sheet
+		(at 109.22 61.468)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d09fb69-4b72-4ed7-a3f3-711309dddb0f")
+		(property "Sheetname" "gpio-connect2"
+			(at 109.22 60.7564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 65.8626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 109.22 64.008 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
-		)
-		(property "Description" "2.5A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 151.765 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "07cc7def-3a26-461d-bb29-a91d4421d85d")
-		)
-		(pin "3"
-			(uuid "6fc9ce08-14d8-43a7-a465-3d12455e7952")
-		)
-		(pin "1"
-			(uuid "141cd9e1-b69a-476a-8e57-2d69572b0f3a")
+			(uuid "b0d6b212-cac3-466c-8e46-55b3e9f1438c")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "Q5")
-					(unit 1)
+					(page "12")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Power_Protection:RCLAMP0502B")
-		(at 164.465 123.825 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(sheet
+		(at 109.22 69.85)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
-		(uuid "308ae5b3-f9b3-4798-aa6a-de00a9d9a483")
-		(property "Reference" "D8"
-			(at 170.18 122.4914 90)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "639113aa-1472-4abf-9c91-4d574f3fab19")
+		(property "Sheetname" "gpio-connect3"
+			(at 109.22 69.1384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "RCLAMP0502B"
-			(at 170.18 125.0314 90)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 74.2446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left top)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-416"
-			(at 172.085 123.825 0)
+		(pin "GPIO" input
+			(at 109.22 72.39 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
-		)
-		(property "Datasheet" "https://www.semtech.com/products/circuit-protection/low-capacitance/rclamp0502b"
-			(at 161.925 122.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low capacitance unidirectional dual ESD protection diode, SC-75"
-			(at 164.465 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ff645d6f-da99-4806-9d4f-5f1fd9b507f1")
-		)
-		(pin "1"
-			(uuid "0f2e0fa8-bb49-4be7-bb3c-b404d8186d26")
-		)
-		(pin "3"
-			(uuid "c4e8714d-0584-4c65-b073-50a74d74c310")
+			(uuid "61721132-ff26-45ab-8fe4-4ab342a56b31")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "D8")
-					(unit 1)
+					(page "13")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 77.47 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(sheet
+		(at 109.22 44.45)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
-		(uuid "72edd69f-ead8-489d-9692-b394f07b7f56")
-		(property "Reference" "SW6"
-			(at 77.47 81.915 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7f98d1f5-c6ef-4a79-af34-d0094fbfede7")
+		(property "Sheetname" "gpio-connect"
+			(at 109.22 43.7384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 77.47 84.455 0)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 48.8446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 77.47 88.9 0)
+		(pin "GPIO" input
+			(at 109.22 46.99 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 77.47 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "56040e78-252c-42ca-ac11-ccbe9d6386fb")
-		)
-		(pin "1"
-			(uuid "de835b7a-9f39-4771-bafb-44705f8a3350")
+			(uuid "208af5f7-87e8-4b81-a291-9e4ac7822069")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "SW6")
-					(unit 1)
+					(page "11")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 154.305 73.025 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(sheet
+		(at 109.474 120.904)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
-		(uuid "7958b927-82f9-4ecf-9274-73f21c30518a")
-		(property "Reference" "SW3"
-			(at 159.385 71.7549 90)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "be31b087-47b4-4ad2-a2b9-23f161545263")
+		(property "Sheetname" "gpio-connect9"
+			(at 109.474 120.1924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "SW_SPDT"
-			(at 159.385 74.2949 90)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.474 125.2986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 154.305 73.025 0)
+		(pin "GPIO" input
+			(at 109.474 123.444 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
-		)
-		(property "Datasheet" "~"
-			(at 161.925 73.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 154.305 73.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d760ad6a-c147-4caa-8a72-307d90ec5ecc")
-		)
-		(pin "3"
-			(uuid "6d89b55f-e14d-479b-9bc4-e8ebe14f76d0")
-		)
-		(pin "1"
-			(uuid "dac0680f-4dc4-40f8-a37f-57442eeeaeea")
+			(uuid "32f02feb-8de6-4dcf-9fb5-14d12b8eb317")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "SW3")
-					(unit 1)
+					(page "19")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 156.845 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(sheet
+		(at 109.22 95.504)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
-		(uuid "9469a5e6-1f78-4af8-8d18-60689a46dc8e")
-		(property "Reference" "#PWR095"
-			(at 156.845 71.12 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cfe6500c-6446-4e0c-9c7c-b4d8ba2ff85d")
+		(property "Sheetname" "gpio-connect6"
+			(at 109.22 94.7924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "VBAT"
-			(at 156.845 62.23 0)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.22 99.8986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 156.845 67.31 0)
+		(pin "GPIO" input
+			(at 109.22 98.044 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
-		)
-		(property "Datasheet" ""
-			(at 156.845 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 156.845 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "491e156b-bffd-405e-bbaf-0c38c66f4b05")
+			(uuid "0812255b-4f5b-46af-a6e1-0cc4252a8494")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "#PWR095")
-					(unit 1)
+					(page "16")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 164.465 128.905 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(sheet
+		(at 109.474 137.668)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
-		(uuid "9d764a7d-27f6-44a5-a7da-eedcef1e401a")
-		(property "Reference" "#PWR098"
-			(at 164.465 135.255 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e0544286-5dcd-4a15-8ddf-58de9907b2c3")
+		(property "Sheetname" "gpio-connect11"
+			(at 109.474 136.9564 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "GND"
-			(at 164.465 133.35 0)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.474 142.0626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 164.465 128.905 0)
+		(pin "GPIO" input
+			(at 109.474 140.208 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
-		)
-		(property "Datasheet" ""
-			(at 164.465 128.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 164.465 128.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d89fba92-f89b-4e82-8383-1ea1f56dedbc")
+			(uuid "a1382c20-33cf-490f-8812-5a62108f26d8")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "#PWR098")
-					(unit 1)
+					(page "21")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 139.065 89.535 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(sheet
+		(at 109.474 112.268)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
-		(uuid "9dae7c67-41fd-4c88-94a2-edc846d98c24")
-		(property "Reference" "SW5"
-			(at 139.065 82.55 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e70e9812-fa5c-4a04-b54f-6d2f06f4c0bc")
+		(property "Sheetname" "gpio-connect8"
+			(at 109.474 111.5564 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 139.065 85.09 0)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 109.474 116.6626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.065 89.535 0)
+		(pin "GPIO" input
+			(at 109.474 114.808 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
-		)
-		(property "Datasheet" "~"
-			(at 139.065 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 139.065 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "46186969-6471-40f6-ace0-85b650ab62c9")
-		)
-		(pin "1"
-			(uuid "38190319-2e55-4fff-83a5-8bc6e45f6bac")
+			(uuid "5ca64c9e-0e9e-4292-ab74-44c19fc98bd9")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 96.52 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6924dcc-bb7a-4663-b910-1b28e39a269f")
-		(property "Reference" "#PWR097"
-			(at 96.52 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBAT"
-			(at 96.52 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 96.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07ed9fb3-8b3c-4c9e-baff-a202961f03e4")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 93.98 73.025 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0839d5a-799a-406c-9f39-a6ec0a2a612e")
-		(property "Reference" "SW4"
-			(at 99.06 71.7549 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 99.06 74.2949 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 73.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 101.6 73.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 93.98 73.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8a4e9f1d-f44e-49d0-b308-52a6f24b1c26")
-		)
-		(pin "3"
-			(uuid "a375781b-dfae-41d3-883f-d22906ba0b52")
-		)
-		(pin "1"
-			(uuid "8b026be4-f622-465b-a651-d60f40cc1dbc")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 151.765 64.135 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c680fc22-9707-4b02-bd95-6a43d88de047")
-		(property "Reference" "#PWR094"
-			(at 151.765 67.945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 151.765 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.765 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.765 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 151.765 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "91b8a4e8-69e9-4ff9-b543-c52b5fb3f92a")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(reference "#PWR094")
-					(unit 1)
+					(page "18")
 				)
 			)
 		)
