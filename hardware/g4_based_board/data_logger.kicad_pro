@@ -598,12 +598,72 @@
       "interface"
     ],
     [
-      "94aa18ec-ca43-48bb-9ac5-de3a297c59dd",
-      "thermalcouples"
+      "47c75381-6904-4ea2-8134-7aeca0045b3c",
+      "gpio-connect1"
     ],
     [
       "3e5ba35e-4846-4163-b2e5-060de6c34a85",
       "comms_interface"
+    ],
+    [
+      "79bfa245-5bdd-47bd-a618-7bff8c0d4dc4",
+      "power_prioritizer"
+    ],
+    [
+      "64cad9c2-923b-44f2-aea0-a06750d06d38",
+      "thermocouples"
+    ],
+    [
+      "7f98d1f5-c6ef-4a79-af34-d0094fbfede7",
+      "gpio-connect"
+    ],
+    [
+      "b23c49c6-61fc-48c4-8510-95e902e0d831",
+      "LCD1"
+    ],
+    [
+      "4d09fb69-4b72-4ed7-a3f3-711309dddb0f",
+      "gpio-connect2"
+    ],
+    [
+      "639113aa-1472-4abf-9c91-4d574f3fab19",
+      "gpio-connect3"
+    ],
+    [
+      "3dfdb84b-6dc4-4886-b30a-e6a3b5c62138",
+      "gpio-connect4"
+    ],
+    [
+      "0c5dcce1-13d1-4e1b-9c68-2f6b32acedff",
+      "gpio-connect5"
+    ],
+    [
+      "cfe6500c-6446-4e0c-9c7c-b4d8ba2ff85d",
+      "gpio-connect6"
+    ],
+    [
+      "0470eb99-f78d-44c4-a3af-99363b0edda3",
+      "gpio-connect7"
+    ],
+    [
+      "e70e9812-fa5c-4a04-b54f-6d2f06f4c0bc",
+      "gpio-connect8"
+    ],
+    [
+      "be31b087-47b4-4ad2-a2b9-23f161545263",
+      "gpio-connect9"
+    ],
+    [
+      "1573bd79-5555-47e0-9be6-230c66db34fe",
+      "gpio-connect10"
+    ],
+    [
+      "e0544286-5dcd-4a15-8ddf-58de9907b2c3",
+      "gpio-connect11"
+    ],
+    [
+      "18781abb-79f1-4f5b-b807-9b2a1d084f50",
+      "gpio-analog-amp"
     ]
   ],
   "text_variables": {}
