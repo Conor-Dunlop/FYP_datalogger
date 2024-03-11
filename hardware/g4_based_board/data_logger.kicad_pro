@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -170,7 +176,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -197,7 +206,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -399,7 +413,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "ignore",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
@@ -539,7 +553,13 @@
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "field_names": [],
+      "field_names": [
+        {
+          "name": "Name",
+          "url": false,
+          "visible": true
+        }
+      ],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -582,8 +602,8 @@
       "mcu"
     ],
     [
-      "43f46613-cc82-4961-a27a-4bcd09476247",
-      "power"
+      "f4b139c3-914b-49de-abc1-a0bad3cbe65e",
+      "high-speed-digtial-conn1"
     ],
     [
       "d4605b59-911a-47dc-8072-99de95361456",
@@ -602,24 +622,24 @@
       "gpio-connect1"
     ],
     [
-      "3e5ba35e-4846-4163-b2e5-060de6c34a85",
-      "comms_interface"
+      "760132d7-6829-4889-a9ce-94c5dcbd4bb3",
+      "gpio-analog-amp1"
     ],
     [
-      "79bfa245-5bdd-47bd-a618-7bff8c0d4dc4",
-      "power_prioritizer"
+      "250734e1-d7f8-41b2-9321-2452fda4ecda",
+      "high-speed-digtial-conn2"
     ],
     [
       "64cad9c2-923b-44f2-aea0-a06750d06d38",
       "thermocouples"
     ],
     [
-      "7f98d1f5-c6ef-4a79-af34-d0094fbfede7",
-      "gpio-connect"
-    ],
-    [
       "b23c49c6-61fc-48c4-8510-95e902e0d831",
       "LCD1"
+    ],
+    [
+      "7f98d1f5-c6ef-4a79-af34-d0094fbfede7",
+      "gpio-connect"
     ],
     [
       "4d09fb69-4b72-4ed7-a3f3-711309dddb0f",
@@ -662,8 +682,32 @@
       "gpio-connect11"
     ],
     [
+      "2660ec62-9d91-45c9-8b52-28e8e2486bc7",
+      "high-speed-digtial-conn"
+    ],
+    [
       "18781abb-79f1-4f5b-b807-9b2a1d084f50",
       "gpio-analog-amp"
+    ],
+    [
+      "5d7d1e2d-88e6-4054-988c-8f924017c91a",
+      "high-speed-digtial-conn3"
+    ],
+    [
+      "37fbdeb5-12de-4851-b706-4912f530b6cb",
+      "high-speed-digtial-conn4"
+    ],
+    [
+      "afcbe642-6eef-41e7-bc1c-2f7d6b10c09e",
+      "high-speed-digtial-conn5"
+    ],
+    [
+      "0ce80d17-5c4b-41d7-88c4-0ae46050b370",
+      "spi_en_expander"
+    ],
+    [
+      "ab250e5c-6a0e-43ed-b42b-bd03a881d896",
+      "power"
     ]
   ],
   "text_variables": {}
