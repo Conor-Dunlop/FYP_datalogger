@@ -7,7 +7,7 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 109.22 46.99) (xy 104.902 46.99)
+			(xy 70.485 48.895) (xy 66.04 48.895)
 		)
 		(stroke
 			(width 0)
@@ -17,7 +17,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 98.044) (xy 104.902 98.044)
+			(xy 70.485 100.33) (xy 66.04 100.33)
 		)
 		(stroke
 			(width 0)
@@ -27,7 +27,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 72.39) (xy 104.902 72.39)
+			(xy 70.485 74.295) (xy 66.04 74.295)
 		)
 		(stroke
 			(width 0)
@@ -37,7 +37,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 89.662) (xy 104.902 89.662)
+			(xy 70.485 91.44) (xy 66.04 91.44)
 		)
 		(stroke
 			(width 0)
@@ -47,7 +47,17 @@
 	)
 	(wire
 		(pts
-			(xy 109.474 114.808) (xy 105.156 114.808)
+			(xy 154.94 57.785) (xy 160.02 57.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a378b25-433c-45fd-864d-0d92d1e6ffde")
+	)
+	(wire
+		(pts
+			(xy 70.485 116.84) (xy 66.675 116.84)
 		)
 		(stroke
 			(width 0)
@@ -57,7 +67,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 81.026) (xy 104.902 81.026)
+			(xy 70.485 83.185) (xy 66.04 83.185)
 		)
 		(stroke
 			(width 0)
@@ -67,7 +77,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 64.008) (xy 104.902 64.008)
+			(xy 70.485 66.04) (xy 66.04 66.04)
 		)
 		(stroke
 			(width 0)
@@ -77,7 +87,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 106.426) (xy 104.902 106.426)
+			(xy 70.485 108.585) (xy 66.04 108.585)
 		)
 		(stroke
 			(width 0)
@@ -87,7 +97,17 @@
 	)
 	(wire
 		(pts
-			(xy 109.474 140.208) (xy 105.156 140.208)
+			(xy 154.94 81.915) (xy 160.655 81.915)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c98bcda1-0d9b-47bb-8aef-edd2f4ef9b44")
+	)
+	(wire
+		(pts
+			(xy 70.485 142.24) (xy 66.675 142.24)
 		)
 		(stroke
 			(width 0)
@@ -97,7 +117,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 55.626) (xy 104.902 55.626)
+			(xy 70.485 57.785) (xy 66.04 57.785)
 		)
 		(stroke
 			(width 0)
@@ -107,7 +127,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.474 123.444) (xy 105.156 123.444)
+			(xy 70.485 125.73) (xy 66.675 125.73)
 		)
 		(stroke
 			(width 0)
@@ -117,7 +137,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.474 131.826) (xy 105.156 131.826)
+			(xy 70.485 133.985) (xy 66.675 133.985)
 		)
 		(stroke
 			(width 0)
@@ -127,7 +147,7 @@
 	)
 	(hierarchical_label "GPIO-5"
 		(shape input)
-		(at 104.902 81.026 180)
+		(at 66.04 83.185 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -139,7 +159,7 @@
 	)
 	(hierarchical_label "GPIO-10"
 		(shape input)
-		(at 105.156 123.444 180)
+		(at 66.675 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -151,7 +171,7 @@
 	)
 	(hierarchical_label "GPIO-11"
 		(shape input)
-		(at 105.156 131.826 180)
+		(at 66.675 133.985 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -163,7 +183,7 @@
 	)
 	(hierarchical_label "GPIO-9"
 		(shape input)
-		(at 105.156 114.808 180)
+		(at 66.675 116.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -175,7 +195,7 @@
 	)
 	(hierarchical_label "GPIO-4"
 		(shape input)
-		(at 104.902 72.39 180)
+		(at 66.04 74.295 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -187,7 +207,7 @@
 	)
 	(hierarchical_label "GPIO-6"
 		(shape input)
-		(at 104.902 89.662 180)
+		(at 66.04 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -197,9 +217,21 @@
 		)
 		(uuid "6a123cee-3ba0-49bb-b4df-31efd4dc1b9f")
 	)
+	(hierarchical_label "GPIO-2-DAC"
+		(shape input)
+		(at 154.94 81.915 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c246281-c02b-4fd7-af6b-44e92885248d")
+	)
 	(hierarchical_label "GPIO-1"
 		(shape input)
-		(at 104.902 46.99 180)
+		(at 66.04 48.895 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -211,7 +243,7 @@
 	)
 	(hierarchical_label "GPIO-8"
 		(shape input)
-		(at 104.902 106.426 180)
+		(at 66.04 108.585 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -223,7 +255,7 @@
 	)
 	(hierarchical_label "GPIO-7"
 		(shape input)
-		(at 104.902 98.044 180)
+		(at 66.04 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -233,9 +265,21 @@
 		)
 		(uuid "9f6e1d27-0e65-471e-9256-4918581813a2")
 	)
+	(hierarchical_label "GPIO-1-DAC"
+		(shape input)
+		(at 154.94 57.785 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8611805-28dd-4aca-9b94-b8e3da0a851e")
+	)
 	(hierarchical_label "GPIO-12"
 		(shape input)
-		(at 105.156 140.208 180)
+		(at 66.675 142.24 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -247,7 +291,7 @@
 	)
 	(hierarchical_label "GPIO-3"
 		(shape input)
-		(at 104.902 64.008 180)
+		(at 66.04 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -259,7 +303,7 @@
 	)
 	(hierarchical_label "GPIO-2"
 		(shape input)
-		(at 104.902 55.626 180)
+		(at 66.04 57.785 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -270,7 +314,7 @@
 		(uuid "e5369250-85a2-4b85-a4dc-6c88174c45ac")
 	)
 	(sheet
-		(at 109.22 103.886)
+		(at 70.485 106.045)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -282,7 +326,7 @@
 		)
 		(uuid "0470eb99-f78d-44c4-a3af-99363b0edda3")
 		(property "Sheetname" "gpio-connect7"
-			(at 109.22 103.1744 0)
+			(at 70.485 105.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -291,7 +335,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 108.2806 0)
+			(at 70.485 110.4396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -300,7 +344,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 106.426 180)
+			(at 70.485 108.585 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -318,7 +362,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 87.122)
+		(at 70.485 88.9)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -330,7 +374,7 @@
 		)
 		(uuid "0c5dcce1-13d1-4e1b-9c68-2f6b32acedff")
 		(property "Sheetname" "gpio-connect5"
-			(at 109.22 86.4104 0)
+			(at 70.485 88.1884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -339,7 +383,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 91.5166 0)
+			(at 70.485 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -348,7 +392,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 89.662 180)
+			(at 70.485 91.44 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -366,7 +410,7 @@
 		)
 	)
 	(sheet
-		(at 109.474 129.286)
+		(at 70.485 131.445)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -378,7 +422,7 @@
 		)
 		(uuid "1573bd79-5555-47e0-9be6-230c66db34fe")
 		(property "Sheetname" "gpio-connect10"
-			(at 109.474 128.5744 0)
+			(at 70.485 130.7334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -387,7 +431,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.474 133.6806 0)
+			(at 70.485 135.8396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -396,7 +440,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.474 131.826 180)
+			(at 70.485 133.985 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -414,8 +458,8 @@
 		)
 	)
 	(sheet
-		(at 184.404 64.008)
-		(size 26.416 18.034)
+		(at 160.02 49.53)
+		(size 26.67 17.78)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -426,7 +470,7 @@
 		)
 		(uuid "18781abb-79f1-4f5b-b807-9b2a1d084f50")
 		(property "Sheetname" "gpio-analog-amp"
-			(at 184.404 63.2964 0)
+			(at 160.02 48.8184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -435,13 +479,23 @@
 			)
 		)
 		(property "Sheetfile" "gpio-analog-amp.kicad_sch"
-			(at 184.404 82.6266 0)
+			(at 160.02 68.1486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "GPIO" input
+			(at 160.02 57.785 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6f40ad14-6b25-4309-bece-5350bdc8eb46")
 		)
 		(instances
 			(project "data_logger"
@@ -452,7 +506,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 78.486)
+		(at 70.485 80.645)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -464,7 +518,7 @@
 		)
 		(uuid "3dfdb84b-6dc4-4886-b30a-e6a3b5c62138")
 		(property "Sheetname" "gpio-connect4"
-			(at 109.22 77.7744 0)
+			(at 70.485 79.9334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -473,7 +527,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 82.8806 0)
+			(at 70.485 85.0396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -482,7 +536,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 81.026 180)
+			(at 70.485 83.185 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -500,7 +554,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 53.086)
+		(at 70.485 55.245)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -512,7 +566,7 @@
 		)
 		(uuid "47c75381-6904-4ea2-8134-7aeca0045b3c")
 		(property "Sheetname" "gpio-connect1"
-			(at 109.22 52.3744 0)
+			(at 70.485 54.5334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -521,7 +575,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 57.4806 0)
+			(at 70.485 59.6396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -530,7 +584,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 55.626 180)
+			(at 70.485 57.785 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -548,7 +602,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 61.468)
+		(at 70.485 63.5)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -560,7 +614,7 @@
 		)
 		(uuid "4d09fb69-4b72-4ed7-a3f3-711309dddb0f")
 		(property "Sheetname" "gpio-connect2"
-			(at 109.22 60.7564 0)
+			(at 70.485 62.7884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -569,7 +623,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 65.8626 0)
+			(at 70.485 67.8946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -578,7 +632,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 64.008 180)
+			(at 70.485 66.04 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -596,7 +650,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 69.85)
+		(at 70.485 71.755)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -608,7 +662,7 @@
 		)
 		(uuid "639113aa-1472-4abf-9c91-4d574f3fab19")
 		(property "Sheetname" "gpio-connect3"
-			(at 109.22 69.1384 0)
+			(at 70.485 71.0434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -617,7 +671,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 74.2446 0)
+			(at 70.485 76.1496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -626,7 +680,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 72.39 180)
+			(at 70.485 74.295 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -644,7 +698,55 @@
 		)
 	)
 	(sheet
-		(at 109.22 44.45)
+		(at 160.655 73.66)
+		(size 26.035 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "760132d7-6829-4889-a9ce-94c5dcbd4bb3")
+		(property "Sheetname" "gpio-analog-amp1"
+			(at 160.655 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio-analog-amp.kicad_sch"
+			(at 160.655 92.2786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 160.655 81.915 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "88ac6a68-6c78-4412-9ae8-02d4449cb2dc")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 46.355)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -656,7 +758,7 @@
 		)
 		(uuid "7f98d1f5-c6ef-4a79-af34-d0094fbfede7")
 		(property "Sheetname" "gpio-connect"
-			(at 109.22 43.7384 0)
+			(at 70.485 45.6434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -665,7 +767,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 48.8446 0)
+			(at 70.485 50.7496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -674,7 +776,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 46.99 180)
+			(at 70.485 48.895 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -692,7 +794,7 @@
 		)
 	)
 	(sheet
-		(at 109.474 120.904)
+		(at 70.485 123.19)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -704,7 +806,7 @@
 		)
 		(uuid "be31b087-47b4-4ad2-a2b9-23f161545263")
 		(property "Sheetname" "gpio-connect9"
-			(at 109.474 120.1924 0)
+			(at 70.485 122.4784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -713,7 +815,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.474 125.2986 0)
+			(at 70.485 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -722,7 +824,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.474 123.444 180)
+			(at 70.485 125.73 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -740,7 +842,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 95.504)
+		(at 70.485 97.79)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -752,7 +854,7 @@
 		)
 		(uuid "cfe6500c-6446-4e0c-9c7c-b4d8ba2ff85d")
 		(property "Sheetname" "gpio-connect6"
-			(at 109.22 94.7924 0)
+			(at 70.485 97.0784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -761,7 +863,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.22 99.8986 0)
+			(at 70.485 102.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -770,7 +872,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.22 98.044 180)
+			(at 70.485 100.33 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -788,7 +890,7 @@
 		)
 	)
 	(sheet
-		(at 109.474 137.668)
+		(at 70.485 139.7)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -800,7 +902,7 @@
 		)
 		(uuid "e0544286-5dcd-4a15-8ddf-58de9907b2c3")
 		(property "Sheetname" "gpio-connect11"
-			(at 109.474 136.9564 0)
+			(at 70.485 138.9884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -809,7 +911,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.474 142.0626 0)
+			(at 70.485 144.0946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -818,7 +920,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.474 140.208 180)
+			(at 70.485 142.24 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -836,7 +938,7 @@
 		)
 	)
 	(sheet
-		(at 109.474 112.268)
+		(at 70.485 114.3)
 		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
@@ -848,7 +950,7 @@
 		)
 		(uuid "e70e9812-fa5c-4a04-b54f-6d2f06f4c0bc")
 		(property "Sheetname" "gpio-connect8"
-			(at 109.474 111.5564 0)
+			(at 70.485 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -857,7 +959,7 @@
 			)
 		)
 		(property "Sheetfile" "gpio_connect.kicad_sch"
-			(at 109.474 116.6626 0)
+			(at 70.485 118.6946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -866,7 +968,7 @@
 			)
 		)
 		(pin "GPIO" input
-			(at 109.474 114.808 180)
+			(at 70.485 116.84 180)
 			(effects
 				(font
 					(size 1.27 1.27)
