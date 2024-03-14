@@ -7787,7 +7787,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 67.31 24.13 180)
+		(at 67.31 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7796,7 +7796,7 @@
 		(fields_autoplaced yes)
 		(uuid "f91b8eeb-b35a-460a-8c1b-a3c9e89772a8")
 		(property "Reference" "D1"
-			(at 67.6275 17.78 0)
+			(at 66.9925 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7804,7 +7804,7 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 67.6275 20.32 0)
+			(at 66.9925 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
