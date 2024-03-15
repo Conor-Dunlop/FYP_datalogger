@@ -3681,7 +3681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Minature"
 			(at 177.546 96.266 0)
 			(effects
 				(font
@@ -4504,7 +4504,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Minature"
 			(at 78.232 97.79 0)
 			(effects
 				(font
