@@ -316,6 +316,16 @@
 	)
 	(wire
 		(pts
+			(xy 94.615 141.605) (xy 76.835 141.605)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10c92858-fd4a-45d4-92ef-6e9f8e7f3274")
+	)
+	(wire
+		(pts
 			(xy 37.465 115.57) (xy 19.685 115.57)
 		)
 		(stroke
@@ -376,6 +386,16 @@
 	)
 	(wire
 		(pts
+			(xy 94.615 115.57) (xy 76.835 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "360863ea-9d5b-4636-8937-1dc7083a64cf")
+	)
+	(wire
+		(pts
 			(xy 94.615 73.66) (xy 76.835 73.66)
 		)
 		(stroke
@@ -393,16 +413,6 @@
 			(type default)
 		)
 		(uuid "46e9a809-d35b-4ade-8fde-ce61733bd9fe")
-	)
-	(wire
-		(pts
-			(xy 94.615 141.605) (xy 84.455 141.605)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ac06dce-2e54-4682-9bd5-7f5eada2ad3c")
 	)
 	(wire
 		(pts
@@ -436,6 +446,16 @@
 	)
 	(wire
 		(pts
+			(xy 94.615 139.065) (xy 76.835 139.065)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66883aa4-7160-424b-9994-554dfd7fa8a8")
+	)
+	(wire
+		(pts
 			(xy 37.465 130.81) (xy 29.845 130.81)
 		)
 		(stroke
@@ -463,26 +483,6 @@
 			(type default)
 		)
 		(uuid "6f7e6143-3e86-4d1b-9bcc-4f9a611ee2f3")
-	)
-	(wire
-		(pts
-			(xy 94.615 139.065) (xy 84.455 139.065)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "701b0ad8-c692-45a3-9380-2ace8c53cea7")
-	)
-	(wire
-		(pts
-			(xy 94.615 115.57) (xy 84.455 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "718d3d92-0b22-44f8-a685-1e1ede571b33")
 	)
 	(wire
 		(pts
@@ -606,6 +606,16 @@
 	)
 	(wire
 		(pts
+			(xy 94.615 118.11) (xy 76.835 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7e16ceb-9bba-4bde-94ea-a4f47d7b7699")
+	)
+	(wire
+		(pts
 			(xy 37.465 93.98) (xy 19.685 93.98)
 		)
 		(stroke
@@ -693,16 +703,6 @@
 			(type default)
 		)
 		(uuid "f2a8a1a0-c353-467e-b6a5-2148991eb0ea")
-	)
-	(wire
-		(pts
-			(xy 94.615 118.11) (xy 84.455 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7704247-a4ac-4063-8a53-1ede68a13f5f")
 	)
 	(wire
 		(pts
@@ -807,28 +807,6 @@
 		)
 		(uuid "111cd4f1-9e6c-4328-a728-821a769da4a5")
 	)
-	(label "MOSI-SDA"
-		(at 84.455 118.11 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1788c721-f375-4554-8f88-02385a319f8c")
-	)
-	(label "CLK"
-		(at 84.455 115.57 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b1a1f54-4b5f-4fcf-88bb-ed9fc89002ba")
-	)
 	(label "I2C_CLK"
 		(at 19.685 139.7 0)
 		(fields_autoplaced yes)
@@ -839,17 +817,6 @@
 			(justify left bottom)
 		)
 		(uuid "2ca9a37f-0f88-449f-a884-771591e29ace")
-	)
-	(label "MOSI-SDA"
-		(at 84.455 141.605 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "370120e9-5bc0-4080-9d90-f712951ee376")
 	)
 	(label "EN_1"
 		(at 29.845 82.55 0)
@@ -927,6 +894,17 @@
 			(justify left bottom)
 		)
 		(uuid "6cc3d7a1-a773-444a-a41f-67497525d697")
+	)
+	(label "I2C_CLK"
+		(at 76.835 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d1de580-2a49-4b90-b155-1c6b440fc40b")
 	)
 	(label "SDA"
 		(at 19.685 93.98 0)
@@ -1027,8 +1005,8 @@
 		)
 		(uuid "8ff957da-1bc6-42a0-a80b-0298e1cd04e4")
 	)
-	(label "CLK"
-		(at 84.455 139.065 0)
+	(label "I2C_CLK"
+		(at 76.835 139.065 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1036,7 +1014,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a5c68911-0535-4d66-a83f-7cc18341f738")
+		(uuid "a4e72105-4e91-427e-9857-2f6590f085d6")
 	)
 	(label "MISO"
 		(at 76.835 100.33 0)
@@ -1202,6 +1180,28 @@
 			(justify left bottom)
 		)
 		(uuid "e6d8e3e9-fde2-47e2-8df9-ae090220e19d")
+	)
+	(label "SDA"
+		(at 76.835 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea510a3e-8a3a-412f-acc3-0a6bd07be04d")
+	)
+	(label "SDA"
+		(at 76.835 141.605 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ee3e1fa9-80c8-4798-9e1e-54815ca45269")
 	)
 	(label "EN_4"
 		(at 29.845 154.94 0)
