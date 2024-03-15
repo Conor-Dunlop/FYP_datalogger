@@ -1680,7 +1680,13 @@
 		(uuid "2abf319e-34e4-4e62-96ff-f23092ac7e9e")
 	)
 	(junction
-		(at 160.655 78.105)
+		(at 167.005 76.835)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "358c95f2-9b6d-48ed-ac84-d5aeb12ba8d1")
+	)
+	(junction
+		(at 162.56 76.835)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39b8ca4f-25cc-4a40-b771-28350d34a439")
@@ -1701,7 +1707,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 114.935) (xy 177.165 114.935)
+			(xy 172.72 113.665) (xy 179.07 113.665)
 		)
 		(stroke
 			(width 0)
@@ -1711,7 +1717,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 109.855) (xy 182.245 109.855)
+			(xy 172.72 108.585) (xy 184.15 108.585)
 		)
 		(stroke
 			(width 0)
@@ -1731,7 +1737,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 114.935) (xy 150.495 114.935)
+			(xy 132.715 113.665) (xy 152.4 113.665)
 		)
 		(stroke
 			(width 0)
@@ -1771,7 +1777,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.655 125.095) (xy 160.655 122.555)
+			(xy 162.56 123.825) (xy 162.56 121.285)
 		)
 		(stroke
 			(width 0)
@@ -1781,7 +1787,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 142.24) (xy 210.185 142.24)
+			(xy 192.405 140.97) (xy 212.09 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1791,7 +1797,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 78.105) (xy 160.655 78.105)
+			(xy 167.005 76.835) (xy 162.56 76.835)
 		)
 		(stroke
 			(width 0)
@@ -1811,7 +1817,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.655 74.93) (xy 160.655 78.105)
+			(xy 162.56 72.39) (xy 162.56 76.835)
 		)
 		(stroke
 			(width 0)
@@ -1821,7 +1827,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.865 102.235) (xy 189.865 104.775)
+			(xy 191.77 100.965) (xy 191.77 103.505)
 		)
 		(stroke
 			(width 0)
@@ -1831,7 +1837,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 107.315) (xy 150.495 107.315)
+			(xy 147.955 106.045) (xy 152.4 106.045)
 		)
 		(stroke
 			(width 0)
@@ -1841,7 +1847,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.655 78.105) (xy 160.655 94.615)
+			(xy 162.56 76.835) (xy 162.56 81.915)
 		)
 		(stroke
 			(width 0)
@@ -1861,7 +1867,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.325 104.775) (xy 187.325 107.95)
+			(xy 189.23 103.505) (xy 189.23 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1871,7 +1877,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 104.775) (xy 187.325 104.775)
+			(xy 172.72 103.505) (xy 189.23 103.505)
 		)
 		(stroke
 			(width 0)
@@ -1881,7 +1887,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.325 107.95) (xy 189.865 107.95)
+			(xy 189.23 106.68) (xy 191.77 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1891,7 +1897,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.245 116.205) (xy 189.865 116.205)
+			(xy 184.15 114.935) (xy 191.77 114.935)
 		)
 		(stroke
 			(width 0)
@@ -1911,7 +1917,7 @@
 	)
 	(wire
 		(pts
-			(xy 150.495 78.105) (xy 138.43 78.105)
+			(xy 152.4 76.835) (xy 140.335 76.835)
 		)
 		(stroke
 			(width 0)
@@ -1921,7 +1927,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.245 109.855) (xy 182.245 116.205)
+			(xy 184.15 108.585) (xy 184.15 114.935)
 		)
 		(stroke
 			(width 0)
@@ -1931,7 +1937,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 117.475) (xy 173.99 129.54)
+			(xy 175.895 116.205) (xy 175.895 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1941,7 +1947,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 144.78) (xy 210.185 144.78)
+			(xy 192.405 143.51) (xy 212.09 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1951,7 +1957,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 94.615) (xy 146.05 107.315)
+			(xy 147.955 93.345) (xy 147.955 106.045)
 		)
 		(stroke
 			(width 0)
@@ -1961,7 +1967,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 94.615) (xy 146.05 94.615)
+			(xy 140.335 93.345) (xy 147.955 93.345)
 		)
 		(stroke
 			(width 0)
@@ -1971,7 +1977,7 @@
 	)
 	(wire
 		(pts
-			(xy 150.495 112.395) (xy 130.81 112.395)
+			(xy 152.4 111.125) (xy 132.715 111.125)
 		)
 		(stroke
 			(width 0)
@@ -1981,7 +1987,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 129.54) (xy 189.865 129.54)
+			(xy 175.895 128.27) (xy 191.77 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2001,7 +2007,7 @@
 	)
 	(wire
 		(pts
-			(xy 108.585 80.01) (xy 108.585 92.075)
+			(xy 108.585 80.01) (xy 108.585 83.185)
 		)
 		(stroke
 			(width 0)
@@ -2011,7 +2017,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 102.235) (xy 189.865 102.235)
+			(xy 172.72 100.965) (xy 191.77 100.965)
 		)
 		(stroke
 			(width 0)
@@ -2031,7 +2037,17 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 99.695) (xy 189.865 99.695)
+			(xy 167.005 76.835) (xy 178.435 76.835)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fde1084-01b9-4f00-9d72-94e2eb885f2c")
+	)
+	(wire
+		(pts
+			(xy 172.72 98.425) (xy 191.77 98.425)
 		)
 		(stroke
 			(width 0)
@@ -2041,7 +2057,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.785 113.03) (xy 189.865 113.03)
+			(xy 186.69 111.76) (xy 191.77 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2061,7 +2077,7 @@
 	)
 	(wire
 		(pts
-			(xy 150.495 104.775) (xy 150.495 78.105)
+			(xy 152.4 103.505) (xy 152.4 76.835)
 		)
 		(stroke
 			(width 0)
@@ -2071,7 +2087,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.165 114.935) (xy 177.165 124.46)
+			(xy 179.07 113.665) (xy 179.07 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2091,7 +2107,17 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 107.315) (xy 184.785 107.315)
+			(xy 108.585 90.805) (xy 108.585 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b27509a7-8684-4792-96ba-f7fe850208d3")
+	)
+	(wire
+		(pts
+			(xy 172.72 106.045) (xy 186.69 106.045)
 		)
 		(stroke
 			(width 0)
@@ -2101,7 +2127,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.705 112.395) (xy 179.705 121.285)
+			(xy 181.61 111.125) (xy 181.61 120.015)
 		)
 		(stroke
 			(width 0)
@@ -2131,7 +2157,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 112.395) (xy 179.705 112.395)
+			(xy 172.72 111.125) (xy 181.61 111.125)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +2167,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.815 117.475) (xy 173.99 117.475)
+			(xy 172.72 116.205) (xy 175.895 116.205)
 		)
 		(stroke
 			(width 0)
@@ -2161,13 +2187,23 @@
 	)
 	(wire
 		(pts
-			(xy 184.785 107.315) (xy 184.785 113.03)
+			(xy 186.69 106.045) (xy 186.69 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "df62cf39-b0a4-433b-98c2-5e00def8f7a6")
+	)
+	(wire
+		(pts
+			(xy 162.56 89.535) (xy 162.56 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4a6d3a2-52d9-43ed-93eb-7f439d7f68d7")
 	)
 	(wire
 		(pts
@@ -2181,7 +2217,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.165 124.46) (xy 189.865 124.46)
+			(xy 179.07 123.19) (xy 191.77 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2191,7 +2227,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.705 121.285) (xy 189.865 121.285)
+			(xy 181.61 120.015) (xy 191.77 120.015)
 		)
 		(stroke
 			(width 0)
@@ -2200,8 +2236,8 @@
 		(uuid "f2693e16-226c-4ff4-acf1-3e1ec767c422")
 	)
 	(rectangle
-		(start 186.69 93.345)
-		(end 198.755 133.35)
+		(start 188.595 92.075)
+		(end 200.66 132.08)
 		(stroke
 			(width 0)
 			(type dash_dot)
@@ -2224,8 +2260,8 @@
 		(uuid 97fd44f0-44ad-4f1a-a698-5e4f5e8e71b5)
 	)
 	(rectangle
-		(start 129.54 66.675)
-		(end 219.075 136.525)
+		(start 129.54 65.405)
+		(end 220.98 135.255)
 		(stroke
 			(width 0)
 			(type default)
@@ -2236,8 +2272,8 @@
 		(uuid 997b7896-748f-4b5c-bb36-75503d61a775)
 	)
 	(rectangle
-		(start 168.91 137.795)
-		(end 219.075 151.13)
+		(start 170.815 136.525)
+		(end 220.98 149.86)
 		(stroke
 			(width 0)
 			(type default)
@@ -2268,7 +2304,7 @@
 	)
 	(text "MCU connection\n"
 		(exclude_from_sim no)
-		(at 177.165 149.86 0)
+		(at 179.07 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2278,7 +2314,7 @@
 	)
 	(text "thermocouples\n"
 		(exclude_from_sim no)
-		(at 211.455 68.58 0)
+		(at 213.36 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2308,7 +2344,7 @@
 	)
 	(text "solid copper pour\n"
 		(exclude_from_sim no)
-		(at 193.04 92.075 0)
+		(at 194.945 90.805 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2317,7 +2353,7 @@
 		(uuid "fc4737f0-62fc-4c53-8a59-7bcce441483e")
 	)
 	(label "SCL"
-		(at 210.185 142.24 180)
+		(at 212.09 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2328,7 +2364,7 @@
 		(uuid "0bb559e6-65cb-405e-a9c5-162fefb34f58")
 	)
 	(label "SDA"
-		(at 210.185 144.78 180)
+		(at 212.09 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2338,8 +2374,30 @@
 		)
 		(uuid "11500bfa-fef9-40ee-a1cb-5e5d5ac4dc6a")
 	)
+	(label "T1_+"
+		(at 173.355 100.965 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cc77eb6-53cd-4bb2-8f32-f698f7abd5c9")
+	)
+	(label "T3_+"
+		(at 173.355 111.125 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45d1a0ea-9c2c-4bd7-99c3-8f469301766a")
+	)
 	(label "SDA"
-		(at 130.81 112.395 0)
+		(at 132.715 111.125 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2350,7 +2408,7 @@
 		(uuid "68c8f08f-185d-4bd7-8aa2-c93e257e4d00")
 	)
 	(label "SCL"
-		(at 130.81 114.935 0)
+		(at 132.715 113.665 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2359,6 +2417,39 @@
 			(justify left bottom)
 		)
 		(uuid "8791ff4c-d752-4116-80c5-47f8762331e2")
+	)
+	(label "T1_-"
+		(at 173.355 98.425 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87ed75c1-2f08-40b8-995d-85319658801a")
+	)
+	(label "T3_-"
+		(at 173.355 108.585 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b5df1ae-f709-4cc9-8e0a-23cc4713d218")
+	)
+	(label "T4_-"
+		(at 173.355 113.665 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aec35b81-1221-4c24-872c-a289e678a2c1")
 	)
 	(label "SCL"
 		(at 77.47 99.695 0)
@@ -2370,6 +2461,39 @@
 			(justify left bottom)
 		)
 		(uuid "debdb5da-400f-42e0-aba5-cee3ebe3328b")
+	)
+	(label "T4_+"
+		(at 173.355 116.205 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e16baee0-cdf8-4900-b175-086083931991")
+	)
+	(label "T2_+"
+		(at 173.355 106.045 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e759890b-79f8-4fd7-b02b-24ac3f2af152")
+	)
+	(label "T2_-"
+		(at 173.355 103.505 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f542fe4c-2e4a-4b69-a0e5-a01e7d38f244")
 	)
 	(label "SDA"
 		(at 77.47 97.155 0)
@@ -2384,7 +2508,7 @@
 	)
 	(hierarchical_label "THERMO_I2C_SCL"
 		(shape input)
-		(at 190.5 142.24 180)
+		(at 192.405 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2396,7 +2520,7 @@
 	)
 	(hierarchical_label "THERMO_I2C_SDA"
 		(shape input)
-		(at 190.5 144.78 180)
+		(at 192.405 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2408,7 +2532,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 134.62 89.535 0)
+		(at 136.525 88.265 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2416,7 +2540,7 @@
 		(dnp no)
 		(uuid "0e20a94f-c620-4e6d-b8aa-65d5c64314b4")
 		(property "Reference" "#PWR0111"
-			(at 134.62 93.345 0)
+			(at 136.525 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2425,7 +2549,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 139.065 88.265 0)
+			(at 140.97 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,7 +2557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 89.535 0)
+			(at 136.525 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2442,7 +2566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 89.535 0)
+			(at 136.525 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2451,7 +2575,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 134.62 89.535 0)
+			(at 136.525 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2537,76 +2661,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Thermocouple_Block")
-		(at 194.945 118.745 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f3f33c8-1046-4c2a-ba55-c0105d255236")
-		(property "Reference" "TC7"
-			(at 199.39 117.4749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Thermocouple_Block"
-			(at 199.39 120.0149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 120.015 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 120.015 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thermocouple with isothermal block"
-			(at 194.945 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fcd9fdea-30ab-48c1-a0bd-2fa954e2c6d8")
-		)
-		(pin "1"
-			(uuid "e58a3283-4b1b-4a9e-91a0-1e680ee63624")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
-					(reference "TC7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 81.915 145.415 0)
 		(unit 1)
@@ -2666,6 +2720,72 @@
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
 					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 178.435 84.455 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "341bd8c7-f047-4395-8815-8f4ff8b4c972")
+		(property "Reference" "#PWR024"
+			(at 178.435 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 178.435 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 178.435 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 178.435 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 178.435 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbd579c7-93ba-4af4-be67-6093f05b5eff")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -2745,8 +2865,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Thermocouple_Block")
+		(at 196.85 125.73 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "429db121-61c3-4795-90a2-cb68e40873dd")
+		(property "Reference" "TC4"
+			(at 201.295 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Thermocouple_Block"
+			(at 201.295 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 211.455 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.455 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thermocouple with isothermal block"
+			(at 196.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Name" ""
+			(at 196.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8ba84f1c-33eb-4036-b07b-5fa152d78fb5")
+		)
+		(pin "1"
+			(uuid "67dd83e0-4613-4cf6-b920-033f82f977f8")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
+					(reference "TC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 165.1 85.725 0)
+		(at 167.005 84.455 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2755,7 +2953,7 @@
 		(fields_autoplaced yes)
 		(uuid "486c24bc-99fe-4e13-9fd8-8797a5e2b31b")
 		(property "Reference" "#PWR0108"
-			(at 165.1 92.075 0)
+			(at 167.005 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,7 +2962,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 90.805 0)
+			(at 167.005 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2772,7 +2970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 85.725 0)
+			(at 167.005 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2781,7 +2979,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 85.725 0)
+			(at 167.005 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2790,7 +2988,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 85.725 0)
+			(at 167.005 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2877,7 +3075,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 134.62 73.025 0)
+		(at 136.525 71.755 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2886,7 +3084,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c11c503-91f4-4fdd-b0f6-0449ef5bd928")
 		(property "Reference" "#PWR0110"
-			(at 134.62 76.835 0)
+			(at 136.525 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,7 +3093,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 134.62 67.945 0)
+			(at 136.525 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2903,7 +3101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 73.025 0)
+			(at 136.525 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2912,7 +3110,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 73.025 0)
+			(at 136.525 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2921,7 +3119,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 134.62 73.025 0)
+			(at 136.525 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2936,6 +3134,76 @@
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
 					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Thermocouple_Block")
+		(at 196.85 117.475 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "673af2ba-c9ed-47dd-ba3c-ac63f27baa71")
+		(property "Reference" "TC3"
+			(at 201.295 116.2049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Thermocouple_Block"
+			(at 201.295 118.7449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 211.455 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.455 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thermocouple with isothermal block"
+			(at 196.85 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b47c65a-c89d-4859-8f72-837003f56953")
+		)
+		(pin "1"
+			(uuid "7e1cf0a9-185e-4a0e-82a2-8d034c282299")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
+					(reference "TC3")
 					(unit 1)
 				)
 			)
@@ -3076,7 +3344,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 134.62 99.695 0)
+		(at 136.525 98.425 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3085,7 +3353,7 @@
 		(fields_autoplaced yes)
 		(uuid "70f53494-4d05-4564-9ff0-570dd5aece83")
 		(property "Reference" "#PWR0112"
-			(at 134.62 106.045 0)
+			(at 136.525 104.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,7 +3362,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.62 104.775 0)
+			(at 136.525 103.505 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3102,7 +3370,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 99.695 0)
+			(at 136.525 98.425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3111,7 +3379,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 99.695 0)
+			(at 136.525 98.425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3120,7 +3388,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 99.695 0)
+			(at 136.525 98.425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3142,7 +3410,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 134.62 83.185 0)
+		(at 136.525 81.915 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3150,7 +3418,7 @@
 		(dnp no)
 		(uuid "72c9e393-7a31-408a-b1db-f32c6a672742")
 		(property "Reference" "#PWR0113"
-			(at 134.62 89.535 0)
+			(at 136.525 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3159,7 +3427,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 85.09 0)
+			(at 140.335 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +3435,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 83.185 0)
+			(at 136.525 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,7 +3444,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 83.185 0)
+			(at 136.525 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3185,7 +3453,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 83.185 0)
+			(at 136.525 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3200,6 +3468,76 @@
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
 					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Thermocouple_Block")
+		(at 196.85 100.965 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76c429f1-1014-4860-88bc-ef33bb269597")
+		(property "Reference" "TC1"
+			(at 201.295 99.6949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Thermocouple_Block"
+			(at 201.295 102.2349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 211.455 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.455 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thermocouple with isothermal block"
+			(at 196.85 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83065828-d229-4636-a9f1-b11c14dc40ab")
+		)
+		(pin "1"
+			(uuid "bafcb911-d30a-485d-90cd-15f8091f7eb9")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
+					(reference "TC1")
 					(unit 1)
 				)
 			)
@@ -3330,76 +3668,6 @@
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
 					(reference "#PWR0124")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermocouple_Block")
-		(at 194.945 110.49 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89db9e9e-0d9a-41aa-8b08-051a5a3e6cbe")
-		(property "Reference" "TC6"
-			(at 199.39 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Thermocouple_Block"
-			(at 199.39 111.7599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thermocouple with isothermal block"
-			(at 194.945 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3fe6c928-13fa-44e2-acd1-d86ee7c12826")
-		)
-		(pin "1"
-			(uuid "7d204018-1748-415c-ae8b-ec7fb0935921")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
-					(reference "TC6")
 					(unit 1)
 				)
 			)
@@ -3688,17 +3956,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 134.62 78.105 90)
+		(lib_id "Device:C")
+		(at 178.435 80.645 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c42a954f-132c-40bd-bf55-8f8c0126c53d")
-		(property "Reference" "JP7"
-			(at 132.08 77.4699 90)
+		(uuid "b43a2819-4896-4cbf-a24a-bab1efdf5143")
+		(property "Reference" "C16"
+			(at 182.245 79.3749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3706,8 +3974,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 132.08 79.375 90)
+		(property "Value" "10u"
+			(at 182.245 81.9149 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3715,8 +3983,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 134.62 78.105 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 179.4002 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3725,7 +3993,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 78.105 0)
+			(at 178.435 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 178.435 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e5815715-56f8-4322-bc08-734b6fdaae80")
+		)
+		(pin "1"
+			(uuid "170af6be-894b-42da-8e81-793d2cbc8f0e")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 136.525 76.835 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c42a954f-132c-40bd-bf55-8f8c0126c53d")
+		(property "Reference" "JP7"
+			(at 133.985 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 133.985 78.105 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 136.525 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.525 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3734,7 +4072,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 134.62 78.105 0)
+			(at 136.525 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3762,7 +4100,7 @@
 	)
 	(symbol
 		(lib_id "Analog_ADC:MCP3428x-xST")
-		(at 160.655 109.855 180)
+		(at 162.56 108.585 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3771,7 +4109,7 @@
 		(fields_autoplaced yes)
 		(uuid "c44e4f90-c823-4467-8ec9-46273f41fc62")
 		(property "Reference" "U10"
-			(at 161.0009 92.71 0)
+			(at 162.9059 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3780,7 +4118,7 @@
 			)
 		)
 		(property "Value" "MCP3428x-xST"
-			(at 161.0009 95.25 0)
+			(at 162.9059 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3789,7 +4127,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 139.065 95.885 0)
+			(at 140.97 94.615 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3798,7 +4136,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf"
-			(at 160.655 125.095 0)
+			(at 162.56 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,7 +4145,7 @@
 			)
 		)
 		(property "Description" "16-Bit, Multi-Channel ΔΣ Analog-to-Digital Converter with I2C Interface and On-Board Reference, TSSOP-14"
-			(at 160.655 109.855 0)
+			(at 162.56 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3861,76 +4199,6 @@
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
 					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermocouple_Block")
-		(at 194.945 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c805d088-eb6f-4147-89b8-470fbded6638")
-		(property "Reference" "TC8"
-			(at 199.39 125.7299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Thermocouple_Block"
-			(at 199.39 128.2699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thermocouple with isothermal block"
-			(at 194.945 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "eb439485-c3a8-4a7a-8b0a-b960c8cae16a")
-		)
-		(pin "1"
-			(uuid "b4251848-6628-46b1-b1d2-d0c63d010f2c")
-		)
-		(instances
-			(project "data_logger"
-				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
-					(reference "TC8")
 					(unit 1)
 				)
 			)
@@ -4070,7 +4338,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 134.62 94.615 90)
+		(at 136.525 93.345 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4079,7 +4347,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5aa1ee1-456f-4fd5-8e7b-04bd00e61f3b")
 		(property "Reference" "JP1"
-			(at 132.08 93.9799 90)
+			(at 133.985 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4088,7 +4356,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 132.08 95.885 90)
+			(at 133.985 94.615 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4365,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 134.62 94.615 0)
+			(at 136.525 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,7 +4374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 94.615 0)
+			(at 136.525 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,7 +4383,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 134.62 94.615 0)
+			(at 136.525 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4142,35 +4410,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 165.1 81.915 0)
+		(lib_id "Device:Thermocouple_Block")
+		(at 196.85 109.22 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ea5c8f8e-5735-4b0e-87ea-a1135a0daa0a")
-		(property "Reference" "C26"
-			(at 168.91 80.6449 0)
+		(uuid "e6c719de-fe5d-4cc3-a16f-047586cc111a")
+		(property "Reference" "TC2"
+			(at 201.295 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 168.91 83.1849 0)
+		(property "Value" "Thermocouple_Block"
+			(at 201.295 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 166.0652 85.725 0)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
+			(at 211.455 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4179,7 +4447,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 81.915 0)
+			(at 211.455 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thermocouple with isothermal block"
+			(at 196.85 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "507796c2-8b25-48fb-b8f3-2842d750fc5f")
+		)
+		(pin "1"
+			(uuid "1db33883-6f19-4b24-9903-02a46f6d6d73")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
+					(reference "TC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 167.005 80.645 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea5c8f8e-5735-4b0e-87ea-a1135a0daa0a")
+		(property "Reference" "C26"
+			(at 170.815 79.3749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 170.815 81.9149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 167.9702 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.005 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4188,7 +4526,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 165.1 81.915 0)
+			(at 167.005 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4213,7 +4551,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 160.655 74.93 0)
+		(at 162.56 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4222,7 +4560,7 @@
 		(fields_autoplaced yes)
 		(uuid "ebf0c9fd-26f5-4923-aa89-68aee94cb6e3")
 		(property "Reference" "#PWR0106"
-			(at 160.655 78.74 0)
+			(at 162.56 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4569,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 160.655 69.85 0)
+			(at 162.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4239,7 +4577,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.655 74.93 0)
+			(at 162.56 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +4586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.655 74.93 0)
+			(at 162.56 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,7 +4595,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 160.655 74.93 0)
+			(at 162.56 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4428,8 +4766,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 108.585 86.995 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0b04490-4f69-4083-a2b7-a585361aab97")
+		(property "Reference" "R4"
+			(at 104.775 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 104.775 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 106.807 86.995 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 108.585 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 108.585 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93c9c915-4015-44a4-916e-22dd619ab2d1")
+		)
+		(pin "2"
+			(uuid "1d4625e8-60bf-43cc-9c6f-d3fba0a2f688")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 160.655 125.095 0)
+		(at 162.56 123.825 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4438,7 +4845,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2afe5b4-5797-4332-a0c6-c5c2355e3b6f")
 		(property "Reference" "#PWR0107"
-			(at 160.655 131.445 0)
+			(at 162.56 130.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4447,7 +4854,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.655 130.175 0)
+			(at 162.56 128.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4455,7 +4862,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.655 125.095 0)
+			(at 162.56 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4464,7 +4871,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.655 125.095 0)
+			(at 162.56 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4473,7 +4880,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.655 125.095 0)
+			(at 162.56 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4494,35 +4901,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Thermocouple_Block")
-		(at 194.945 102.235 180)
+		(lib_id "Device:R")
+		(at 162.56 85.725 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fcd4fe72-9154-4577-8dbf-67cf1cf8d382")
-		(property "Reference" "TC5"
-			(at 199.39 100.9649 0)
+		(uuid "ff81216e-fe12-4c00-a983-3df8ce148c72")
+		(property "Reference" "R5"
+			(at 158.115 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Thermocouple_Block"
-			(at 199.39 103.5049 0)
+		(property "Value" "R"
+			(at 158.115 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 209.55 103.505 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 160.782 85.725 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,7 +4937,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 103.505 0)
+			(at 162.56 85.725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4539,25 +4945,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thermocouple with isothermal block"
-			(at 194.945 102.235 0)
+		(property "Description" "Resistor"
+			(at 162.56 85.725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "b9528795-d1f8-4b42-8e4c-dd45374ba596")
 		)
 		(pin "1"
-			(uuid "5e1bbcc1-0838-419b-9b47-024a575e6f3a")
+			(uuid "42860a28-0d45-4968-aeef-ef596694ca83")
+		)
+		(pin "2"
+			(uuid "b6d4aece-ad27-4375-b67b-275c6758f20f")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456/64cad9c2-923b-44f2-aea0-a06750d06d38"
-					(reference "TC5")
+					(reference "R5")
 					(unit 1)
 				)
 			)
