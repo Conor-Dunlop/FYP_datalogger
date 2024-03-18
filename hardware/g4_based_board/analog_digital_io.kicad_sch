@@ -458,8 +458,8 @@
 		)
 	)
 	(sheet
-		(at 160.02 49.53)
-		(size 26.67 17.78)
+		(at 160.02 55.245)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -468,9 +468,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "18781abb-79f1-4f5b-b807-9b2a1d084f50")
-		(property "Sheetname" "gpio-analog-amp"
-			(at 160.02 48.8184 0)
+		(uuid "1ddb2927-6235-49f5-8e6a-f39536078056")
+		(property "Sheetname" "gpio-connect12"
+			(at 160.02 54.5334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -478,8 +478,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "gpio-analog-amp.kicad_sch"
-			(at 160.02 68.1486 0)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 160.02 59.6396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -495,12 +495,12 @@
 				)
 				(justify left)
 			)
-			(uuid "6f40ad14-6b25-4309-bece-5350bdc8eb46")
+			(uuid "0ec5ff2f-92f7-477b-9f3b-a781b621df08")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(page "23")
+					(page "8")
 				)
 			)
 		)
@@ -698,8 +698,8 @@
 		)
 	)
 	(sheet
-		(at 160.655 73.66)
-		(size 26.035 17.78)
+		(at 160.655 79.375)
+		(size 12.7 3.81)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -708,9 +708,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "760132d7-6829-4889-a9ce-94c5dcbd4bb3")
-		(property "Sheetname" "gpio-analog-amp1"
-			(at 160.655 72.9484 0)
+		(uuid "7d370875-1b85-44e6-8a09-29e5c1ee7437")
+		(property "Sheetname" "gpio-connect13"
+			(at 160.655 78.6634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -718,8 +718,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "gpio-analog-amp.kicad_sch"
-			(at 160.655 92.2786 0)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 160.655 83.7696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -735,12 +735,12 @@
 				)
 				(justify left)
 			)
-			(uuid "88ac6a68-6c78-4412-9ae8-02d4449cb2dc")
+			(uuid "29e21e7c-3e37-4f9b-a14f-53de6fd98612")
 		)
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
-					(page "8")
+					(page "23")
 				)
 			)
 		)
