@@ -178,6 +178,9 @@
       ],
       "track_widths": [
         0.0,
+        0.3,
+        0.5,
+        0.8,
         1.0
       ],
       "tuning_pattern_settings": {
@@ -210,6 +213,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 1.2,
+          "drill": 1.0
         }
       ],
       "zones_allow_external_fillets": false
@@ -622,8 +629,8 @@
       "gpio-connect1"
     ],
     [
-      "760132d7-6829-4889-a9ce-94c5dcbd4bb3",
-      "gpio-analog-amp1"
+      "1ddb2927-6235-49f5-8e6a-f39536078056",
+      "gpio-connect12"
     ],
     [
       "250734e1-d7f8-41b2-9321-2452fda4ecda",
@@ -686,8 +693,8 @@
       "high-speed-digtial-conn"
     ],
     [
-      "18781abb-79f1-4f5b-b807-9b2a1d084f50",
-      "gpio-analog-amp"
+      "7d370875-1b85-44e6-8a09-29e5c1ee7437",
+      "gpio-connect13"
     ],
     [
       "5d7d1e2d-88e6-4054-988c-8f924017c91a",
