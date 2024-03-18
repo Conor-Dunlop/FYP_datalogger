@@ -306,6 +306,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.215 18.415) (xy 104.14 18.415)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08691feb-7267-4959-af95-0ad5490efd7d")
+	)
+	(wire
+		(pts
 			(xy 37.465 146.05) (xy 19.685 146.05)
 		)
 		(stroke
@@ -406,6 +416,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.215 28.575) (xy 104.14 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41537384-8e19-4585-86b2-31b067a4fb63")
+	)
+	(wire
+		(pts
 			(xy 37.465 91.44) (xy 19.685 91.44)
 		)
 		(stroke
@@ -426,6 +446,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 26.035) (xy 55.245 26.035)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dc8b016-d469-4f1a-9e44-26ff1315506e")
+	)
+	(wire
+		(pts
 			(xy 37.465 127) (xy 19.685 127)
 		)
 		(stroke
@@ -436,13 +466,23 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 24.13) (xy 38.1 24.13)
+			(xy 69.215 23.495) (xy 104.14 23.495)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "665b13b0-f5bd-4ca8-b125-b647178ed7a8")
+		(uuid "5d0e78c9-ad00-477e-83fd-733bb33149ba")
+	)
+	(wire
+		(pts
+			(xy 69.215 26.035) (xy 104.14 26.035)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62f6b28f-81d4-4591-945c-e1ab1bc31e2f")
 	)
 	(wire
 		(pts
@@ -536,13 +576,13 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 29.21) (xy 38.1 29.21)
+			(xy 20.32 18.415) (xy 55.245 18.415)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d24a3e4-7ac6-4b4c-9b29-a053ec5eae1d")
+		(uuid "8d0b9c6b-3c9e-4464-87aa-b07f5ced58e0")
 	)
 	(wire
 		(pts
@@ -563,6 +603,16 @@
 			(type default)
 		)
 		(uuid "954a2b98-06d4-4dee-b0db-a098d4761f43")
+	)
+	(wire
+		(pts
+			(xy 20.32 28.575) (xy 55.245 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ab653d6-cc92-489e-b3bc-049a3dfa9ad0")
 	)
 	(wire
 		(pts
@@ -606,6 +656,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 20.955) (xy 55.245 20.955)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6aa362a-966e-43b1-b274-48219b57af07")
+	)
+	(wire
+		(pts
 			(xy 94.615 118.11) (xy 76.835 118.11)
 		)
 		(stroke
@@ -646,23 +706,23 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 26.67) (xy 38.1 26.67)
+			(xy 69.215 20.955) (xy 104.14 20.955)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d156b365-18db-4141-a67c-0e15953597a1")
+		(uuid "c71f460e-1d1e-4681-834a-977e4eb8dfef")
 	)
 	(wire
 		(pts
-			(xy 20.32 19.05) (xy 38.1 19.05)
+			(xy 20.32 23.495) (xy 55.245 23.495)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3296df5-d194-434a-bb1f-707f68614352")
+		(uuid "d63be95e-e7c8-4a93-8121-995ed4b8ca9a")
 	)
 	(wire
 		(pts
@@ -733,16 +793,6 @@
 			(type default)
 		)
 		(uuid "fcf4aa5e-433c-4c06-b044-b6f9d0adcd2e")
-	)
-	(wire
-		(pts
-			(xy 20.32 21.59) (xy 38.1 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff1b417e-4ef2-471d-9ef7-d966ce73e3cb")
 	)
 	(text_box "i put it as +-5v but if we can get a large enough bat we could do +-12 which gives the users alot more options\n\n\nalso might want decoupling for all of these\n\nchanging the power to be dip switches might also be an option\n\nnow only 8 digital interfaces might shrink them more\n\ncounter mux setup is staying for anymore I2C/SPI interfaces that we may need\n\nwe still may make this the case but i did not know how the spi clock and data would effect I2C devices\n//--i2c and spi are on the same nets to limit the amount of pins needed by the dsubs--\n"
 		(exclude_from_sim no)
@@ -818,6 +868,17 @@
 		)
 		(uuid "2ca9a37f-0f88-449f-a884-771591e29ace")
 	)
+	(label "SCLK"
+		(at 55.245 20.955 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "376444bf-0fb4-4563-868e-9734ed8b74af")
+	)
 	(label "EN_1"
 		(at 29.845 82.55 0)
 		(fields_autoplaced yes)
@@ -850,6 +911,17 @@
 			(justify left bottom)
 		)
 		(uuid "44bee9ad-9883-4596-9ccf-6a9d9e4045a1")
+	)
+	(label "MOSI"
+		(at 55.245 26.035 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "455f0cbf-a192-4728-a606-e88303041d28")
 	)
 	(label "SCLK"
 		(at 19.685 73.66 0)
@@ -917,17 +989,6 @@
 		)
 		(uuid "73fa2126-5a61-4d3a-8554-68d734b586a0")
 	)
-	(label "SCLK"
-		(at 38.1 21.59 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "78080e01-159f-45e5-84d5-54b094dadf0d")
-	)
 	(label "MOSI"
 		(at 19.685 78.74 0)
 		(fields_autoplaced yes)
@@ -938,6 +999,17 @@
 			(justify left bottom)
 		)
 		(uuid "78448ee4-93ee-490a-9d61-a1bd8b3c394b")
+	)
+	(label "MISO"
+		(at 69.215 28.575 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "79649f07-de59-44fe-a610-a4bb8694a93f")
 	)
 	(label "I2C_CLK"
 		(at 76.835 67.31 0)
@@ -995,6 +1067,17 @@
 		(uuid "8ee27853-25b9-42f5-af91-0e93429f45aa")
 	)
 	(label "I2C_CLK"
+		(at 55.245 18.415 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8efb7ed1-2564-4719-9250-8a5d8303ba9f")
+	)
+	(label "I2C_CLK"
 		(at 19.685 91.44 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1026,17 +1109,6 @@
 			(justify left bottom)
 		)
 		(uuid "a7efccdb-5c76-4955-a9ed-d6482c08367e")
-	)
-	(label "I2C_CLK"
-		(at 38.1 19.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "aea8db2b-92b3-4e02-b43f-b4e88fd4489f")
 	)
 	(label "I2C_CLK"
 		(at 19.685 115.57 0)
@@ -1071,17 +1143,6 @@
 		)
 		(uuid "b6e057bb-91be-4c32-b7c9-b99e28d9348c")
 	)
-	(label "SDA"
-		(at 38.1 29.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b70656af-e50d-452f-a9d2-d583175b16c5")
-	)
 	(label "MOSI"
 		(at 76.835 102.87 0)
 		(fields_autoplaced yes)
@@ -1104,17 +1165,6 @@
 		)
 		(uuid "b7c8c310-b127-4ed1-a245-ce2f69a6fb6a")
 	)
-	(label "MOSI"
-		(at 38.1 26.67 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b9d3d5fe-cf4c-4f61-afee-67bd30e4fc55")
-	)
 	(label "SCLK"
 		(at 19.685 121.92 0)
 		(fields_autoplaced yes)
@@ -1125,6 +1175,17 @@
 			(justify left bottom)
 		)
 		(uuid "cd6b1e8d-3940-42eb-8173-d1bfebfb525c")
+	)
+	(label "SDA"
+		(at 55.245 28.575 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cea961d1-68c5-408e-9ecf-33d3dcce0fee")
 	)
 	(label "MISO"
 		(at 19.685 148.59 0)
@@ -1137,6 +1198,28 @@
 		)
 		(uuid "d16a5542-db01-47ad-87a4-4c78ba09aeab")
 	)
+	(label "I2C_CLK"
+		(at 69.215 18.415 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1288dd6-9ca2-4f42-a290-957206ba4962")
+	)
+	(label "MOSI"
+		(at 69.215 26.035 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e26c411b-6a8b-47df-8097-67061a204302")
+	)
 	(label "SDA"
 		(at 76.835 93.98 0)
 		(fields_autoplaced yes)
@@ -1148,17 +1231,6 @@
 		)
 		(uuid "e3272975-ba69-4315-92a0-a6c98a179b18")
 	)
-	(label "MISO"
-		(at 38.1 24.13 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e397e01c-2971-406d-967f-4f2ac16f80eb")
-	)
 	(label "I2C_CLK"
 		(at 76.835 91.44 0)
 		(fields_autoplaced yes)
@@ -1169,6 +1241,17 @@
 			(justify left bottom)
 		)
 		(uuid "e4c4ca88-dcd0-4d3c-b400-0257c7afa929")
+	)
+	(label "SDA"
+		(at 69.215 20.955 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e65171d3-7d15-444d-9a77-cf37a4c994b7")
 	)
 	(label "MOSI"
 		(at 19.685 102.87 0)
@@ -1191,6 +1274,17 @@
 			(justify left bottom)
 		)
 		(uuid "ea510a3e-8a3a-412f-acc3-0a6bd07be04d")
+	)
+	(label "MISO"
+		(at 55.245 23.495 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ebb4239f-f423-4c06-9b30-e5c2495cd9e7")
 	)
 	(label "SDA"
 		(at 76.835 141.605 0)
@@ -1247,6 +1341,17 @@
 		)
 		(uuid "f704085a-e460-4862-875c-3e718115cabb")
 	)
+	(label "SCLK"
+		(at 69.215 23.495 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f769d4f7-f878-46c6-a268-e418684e58d0")
+	)
 	(label "EN_2"
 		(at 29.845 106.68 0)
 		(fields_autoplaced yes)
@@ -1272,7 +1377,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape input)
-		(at 20.32 29.21 180)
+		(at 20.32 28.575 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1308,7 +1413,7 @@
 	)
 	(hierarchical_label "SCL"
 		(shape input)
-		(at 20.32 19.05 180)
+		(at 20.32 18.415 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1332,7 +1437,7 @@
 	)
 	(hierarchical_label "SCLK"
 		(shape input)
-		(at 20.32 21.59 180)
+		(at 20.32 20.955 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1344,7 +1449,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape input)
-		(at 20.32 24.13 180)
+		(at 20.32 23.495 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1380,7 +1485,7 @@
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 20.32 26.67 180)
+		(at 20.32 26.035 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1392,7 +1497,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
-		(at 43.18 24.13 0)
+		(at 109.22 23.495 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1400,8 +1505,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9eba2b79-44dc-4900-a38a-5b8986c4b039")
-		(property "Reference" "J9"
-			(at 44.45 22.8599 0)
+		(property "Reference" "J7"
+			(at 110.49 22.2249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1410,7 +1515,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Socket"
-			(at 44.45 25.3999 0)
+			(at 110.49 24.7649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1419,7 +1524,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 43.18 24.13 0)
+			(at 109.22 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1428,7 +1533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 24.13 0)
+			(at 109.22 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1437,7 +1542,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 43.18 24.13 0)
+			(at 109.22 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1463,7 +1568,7 @@
 		(instances
 			(project "data_logger"
 				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/d4605b59-911a-47dc-8072-99de95361456"
-					(reference "J9")
+					(reference "J7")
 					(unit 1)
 				)
 			)
