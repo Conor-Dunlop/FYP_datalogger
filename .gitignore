@@ -1,5 +1,7 @@
 /hardware/*/*-backups/
-/hardware/*/*-bak/
-/hardware/*/*-bak*/
+/hardware/*/*-bak
+/hardware/*/*-bak*
 /hardware/*/*-cache*/
-/hardware/*/_autosave*/
+/hardware/*/_autosave*
+/hardware/*/~_autosave*
+\#auto_saved_files#

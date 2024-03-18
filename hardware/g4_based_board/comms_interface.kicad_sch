@@ -1,0 +1,87 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "c6445c73-9131-4699-89d3-3e9355c981e2")
+	(paper "A4")
+	(lib_symbols)
+	(text_box "yes we are still using the same counter interface for this\nalthough we could use the extra bits on the 7 bit counter in high_speed_digital for enables these"
+		(exclude_from_sim no)
+		(at 37.084 47.498 0)
+		(size 42.926 45.72)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "47126624-cbb1-4d57-b533-319b1f5f3a31")
+	)
+	(hierarchical_label "COUNTER"
+		(shape input)
+		(at 35.56 32.385 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "109f21ff-f9ab-4347-be68-d9feb3e1c7f9")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
+		(at 35.56 27.305 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "278eadd7-6608-49af-991b-1b24b3a10f90")
+	)
+	(hierarchical_label "SPI_MISO"
+		(shape input)
+		(at 35.56 29.845 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ae5cca2-258b-4dda-8864-b7dbdad431f0")
+	)
+	(hierarchical_label "SPI_CLK"
+		(shape input)
+		(at 35.56 24.765 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "83cb3266-088b-4e8f-9032-c8f7554c357d")
+	)
+	(hierarchical_label "RESET"
+		(shape input)
+		(at 35.56 34.925 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e9bc415e-cf22-475a-879a-a91e8beac59a")
+	)
+)

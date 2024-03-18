@@ -5,4 +5,984 @@
 	(uuid "55a2d832-5b81-4817-8367-93eb1b7af200")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 70.485 48.895) (xy 66.04 48.895)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04b2658c-e9c4-49ed-9bd2-a17e75123f5f")
+	)
+	(wire
+		(pts
+			(xy 70.485 100.33) (xy 66.04 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21ac5cfe-f1bd-4703-bf87-a06478290073")
+	)
+	(wire
+		(pts
+			(xy 70.485 74.295) (xy 66.04 74.295)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c862953-50db-4ff2-a1cd-305b3eeee321")
+	)
+	(wire
+		(pts
+			(xy 70.485 91.44) (xy 66.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "367f76d4-d8c6-4948-8327-a90b7fd1e49f")
+	)
+	(wire
+		(pts
+			(xy 154.94 57.785) (xy 160.02 57.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a378b25-433c-45fd-864d-0d92d1e6ffde")
+	)
+	(wire
+		(pts
+			(xy 70.485 116.84) (xy 66.675 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47b06063-576e-49c2-880b-57ffc039270f")
+	)
+	(wire
+		(pts
+			(xy 70.485 83.185) (xy 66.04 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f55e2f6-a1da-4b09-8325-07b72e862192")
+	)
+	(wire
+		(pts
+			(xy 70.485 66.04) (xy 66.04 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82f737fb-05cb-4060-804b-88ce9b160e2b")
+	)
+	(wire
+		(pts
+			(xy 70.485 108.585) (xy 66.04 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6c43f6d-b058-46bb-ab2f-1a8cd418f268")
+	)
+	(wire
+		(pts
+			(xy 154.94 81.915) (xy 160.655 81.915)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c98bcda1-0d9b-47bb-8aef-edd2f4ef9b44")
+	)
+	(wire
+		(pts
+			(xy 70.485 142.24) (xy 66.675 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc5922b-cad3-4676-b555-4e9568f70982")
+	)
+	(wire
+		(pts
+			(xy 70.485 57.785) (xy 66.04 57.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6ad0153-a12a-4717-90e6-fe789177f680")
+	)
+	(wire
+		(pts
+			(xy 70.485 125.73) (xy 66.675 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dee35e0f-f170-455c-987c-e367de946f13")
+	)
+	(wire
+		(pts
+			(xy 70.485 133.985) (xy 66.675 133.985)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e31b7a9e-75e4-4baf-94d3-b516eaeabae9")
+	)
+	(hierarchical_label "GPIO-5"
+		(shape input)
+		(at 66.04 83.185 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "37c51a2d-e75f-4834-9813-034679c6acab")
+	)
+	(hierarchical_label "GPIO-10"
+		(shape input)
+		(at 66.675 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "40d5ef41-7055-46b8-9c38-7f193a803ef8")
+	)
+	(hierarchical_label "GPIO-11"
+		(shape input)
+		(at 66.675 133.985 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "51fc2dd7-717f-4fd0-9302-6d8d5ce6fd93")
+	)
+	(hierarchical_label "GPIO-9"
+		(shape input)
+		(at 66.675 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55622502-1af3-47bd-9a1d-e0139d7c80b9")
+	)
+	(hierarchical_label "GPIO-4"
+		(shape input)
+		(at 66.04 74.295 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67bd94a3-8b75-4bf9-a562-6d0d7ef388ae")
+	)
+	(hierarchical_label "GPIO-6"
+		(shape input)
+		(at 66.04 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6a123cee-3ba0-49bb-b4df-31efd4dc1b9f")
+	)
+	(hierarchical_label "GPIO-2-DAC"
+		(shape input)
+		(at 154.94 81.915 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c246281-c02b-4fd7-af6b-44e92885248d")
+	)
+	(hierarchical_label "GPIO-1"
+		(shape input)
+		(at 66.04 48.895 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87e06dec-33e6-4fcb-a798-7f20c7b4cc41")
+	)
+	(hierarchical_label "GPIO-8"
+		(shape input)
+		(at 66.04 108.585 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d78f0f8-d0a8-49b9-ba4c-d51799794c57")
+	)
+	(hierarchical_label "GPIO-7"
+		(shape input)
+		(at 66.04 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f6e1d27-0e65-471e-9256-4918581813a2")
+	)
+	(hierarchical_label "GPIO-1-DAC"
+		(shape input)
+		(at 154.94 57.785 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8611805-28dd-4aca-9b94-b8e3da0a851e")
+	)
+	(hierarchical_label "GPIO-12"
+		(shape input)
+		(at 66.675 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ae6ec05a-71fa-4c05-8f13-2a078672d8a8")
+	)
+	(hierarchical_label "GPIO-3"
+		(shape input)
+		(at 66.04 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da1eb28c-bc55-4e5f-b899-83d1261e060a")
+	)
+	(hierarchical_label "GPIO-2"
+		(shape input)
+		(at 66.04 57.785 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5369250-85a2-4b85-a4dc-6c88174c45ac")
+	)
+	(sheet
+		(at 70.485 106.045)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0470eb99-f78d-44c4-a3af-99363b0edda3")
+		(property "Sheetname" "gpio-connect7"
+			(at 70.485 105.3334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 110.4396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 108.585 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b7435d07-5223-48fa-84ff-a6d3c3609901")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 88.9)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0c5dcce1-13d1-4e1b-9c68-2f6b32acedff")
+		(property "Sheetname" "gpio-connect5"
+			(at 70.485 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 91.44 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "291ec006-53fa-4963-b116-6ae5bca59258")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 131.445)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1573bd79-5555-47e0-9be6-230c66db34fe")
+		(property "Sheetname" "gpio-connect10"
+			(at 70.485 130.7334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 135.8396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 133.985 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a353fb69-983e-4034-ba0a-afacf3b3ea0e")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 55.245)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1ddb2927-6235-49f5-8e6a-f39536078056")
+		(property "Sheetname" "gpio-connect12"
+			(at 160.02 54.5334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 160.02 59.6396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 160.02 57.785 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0ec5ff2f-92f7-477b-9f3b-a781b621df08")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 80.645)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3dfdb84b-6dc4-4886-b30a-e6a3b5c62138")
+		(property "Sheetname" "gpio-connect4"
+			(at 70.485 79.9334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 85.0396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 83.185 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e67b9e99-f0cb-4e48-9d5f-8fbe35a273c3")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 55.245)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "47c75381-6904-4ea2-8134-7aeca0045b3c")
+		(property "Sheetname" "gpio-connect1"
+			(at 70.485 54.5334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 59.6396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 57.785 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b0496aba-a5fc-42b6-8169-5e7e72e182d1")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 63.5)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d09fb69-4b72-4ed7-a3f3-711309dddb0f")
+		(property "Sheetname" "gpio-connect2"
+			(at 70.485 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 67.8946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b0d6b212-cac3-466c-8e46-55b3e9f1438c")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 71.755)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "639113aa-1472-4abf-9c91-4d574f3fab19")
+		(property "Sheetname" "gpio-connect3"
+			(at 70.485 71.0434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 76.1496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 74.295 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "61721132-ff26-45ab-8fe4-4ab342a56b31")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.655 79.375)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7d370875-1b85-44e6-8a09-29e5c1ee7437")
+		(property "Sheetname" "gpio-connect13"
+			(at 160.655 78.6634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 160.655 83.7696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 160.655 81.915 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "29e21e7c-3e37-4f9b-a14f-53de6fd98612")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "23")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 46.355)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7f98d1f5-c6ef-4a79-af34-d0094fbfede7")
+		(property "Sheetname" "gpio-connect"
+			(at 70.485 45.6434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 50.7496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 48.895 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "208af5f7-87e8-4b81-a291-9e4ac7822069")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 123.19)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "be31b087-47b4-4ad2-a2b9-23f161545263")
+		(property "Sheetname" "gpio-connect9"
+			(at 70.485 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 125.73 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "32f02feb-8de6-4dcf-9fb5-14d12b8eb317")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 97.79)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cfe6500c-6446-4e0c-9c7c-b4d8ba2ff85d")
+		(property "Sheetname" "gpio-connect6"
+			(at 70.485 97.0784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0812255b-4f5b-46af-a6e1-0cc4252a8494")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 139.7)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e0544286-5dcd-4a15-8ddf-58de9907b2c3")
+		(property "Sheetname" "gpio-connect11"
+			(at 70.485 138.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 144.0946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 142.24 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a1382c20-33cf-490f-8812-5a62108f26d8")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 114.3)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e70e9812-fa5c-4a04-b54f-6d2f06f4c0bc")
+		(property "Sheetname" "gpio-connect8"
+			(at 70.485 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_connect.kicad_sch"
+			(at 70.485 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO" input
+			(at 70.485 116.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5ca64c9e-0e9e-4292-ab74-44c19fc98bd9")
+		)
+		(instances
+			(project "data_logger"
+				(path "/9bc93932-ff5f-4f35-96cf-dfa5f042acb6/9b7d6bd0-4bb6-4940-8a64-141003fad1a5"
+					(page "18")
+				)
+			)
+		)
+	)
 )
