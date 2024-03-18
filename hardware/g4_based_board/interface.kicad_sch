@@ -6427,7 +6427,7 @@
 				)
 			)
 		)
-		(property "Value" "DOWN"
+		(property "Value" "WAKE"
 			(at 33.02 126.365 0)
 			(effects
 				(font
@@ -7656,7 +7656,7 @@
 				)
 			)
 		)
-		(property "Value" "DOWN"
+		(property "Value" "UP"
 			(at 33.02 98.425 0)
 			(effects
 				(font
@@ -8036,7 +8036,7 @@
 				)
 			)
 		)
-		(property "Value" "DOWN"
+		(property "Value" "ENTER"
 			(at 33.02 111.76 0)
 			(effects
 				(font
