@@ -836,6 +836,17 @@
 		(uuid "092662c9-e5af-4d4f-a784-1f11b9312498")
 	)
 	(label "MOSI"
+		(at 69.215 26.035 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "09ab4b54-c49f-4fb7-acb1-3b2235354e4d")
+	)
+	(label "MOSI"
 		(at 19.685 151.13 0)
 		(fields_autoplaced yes)
 		(effects
@@ -856,6 +867,17 @@
 			(justify left bottom)
 		)
 		(uuid "111cd4f1-9e6c-4328-a728-821a769da4a5")
+	)
+	(label "MISO"
+		(at 69.215 23.495 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "294cda5d-868c-4446-9af0-8f8ae2e75016")
 	)
 	(label "I2C_CLK"
 		(at 19.685 139.7 0)
@@ -945,6 +967,17 @@
 		)
 		(uuid "55fff6c1-f26d-41ec-925a-644ab388f07d")
 	)
+	(label "SCLK"
+		(at 69.215 28.575 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a3b8292-a911-4ff8-80a5-83a6a1b35ce1")
+	)
 	(label "MOSI"
 		(at 76.835 78.74 0)
 		(fields_autoplaced yes)
@@ -999,17 +1032,6 @@
 			(justify left bottom)
 		)
 		(uuid "78448ee4-93ee-490a-9d61-a1bd8b3c394b")
-	)
-	(label "MISO"
-		(at 69.215 28.575 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "79649f07-de59-44fe-a610-a4bb8694a93f")
 	)
 	(label "I2C_CLK"
 		(at 76.835 67.31 0)
@@ -1209,17 +1231,6 @@
 		)
 		(uuid "e1288dd6-9ca2-4f42-a290-957206ba4962")
 	)
-	(label "MOSI"
-		(at 69.215 26.035 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e26c411b-6a8b-47df-8097-67061a204302")
-	)
 	(label "SDA"
 		(at 76.835 93.98 0)
 		(fields_autoplaced yes)
@@ -1340,17 +1351,6 @@
 			(justify left bottom)
 		)
 		(uuid "f704085a-e460-4862-875c-3e718115cabb")
-	)
-	(label "SCLK"
-		(at 69.215 23.495 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f769d4f7-f878-46c6-a268-e418684e58d0")
 	)
 	(label "EN_2"
 		(at 29.845 106.68 0)
