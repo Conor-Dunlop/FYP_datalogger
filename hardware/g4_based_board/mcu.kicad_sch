@@ -3044,6 +3044,10 @@
 		(at 103.505 69.215)
 		(uuid "154b608c-efe8-4f24-aeea-fe4f2c654444")
 	)
+	(no_connect
+		(at 67.945 81.915)
+		(uuid "36c60741-7628-412d-b5c8-51120d55f24f")
+	)
 	(wire
 		(pts
 			(xy 67.945 109.855) (xy 53.34 109.855)
@@ -4358,7 +4362,7 @@
 		)
 		(uuid 8f2e39d6-2894-4c0b-8744-6f768676d8f2)
 	)
-	(text_box "there are 2 SPI buses one for the digital out sensors and one for comms\nthis was done because its more likely one of the comms sensors will go dark and fuck up the bus, and in event of that we need a \"clean\" spi bus for sending this info to the comms module\nthe SD card is also on this for the same reason\n\nlarger mcu to avoid having to multiplex pins\n\nG4 has a boot loader <- allows over the air reprogramming"
+	(text_box "there are 2 SPI buses one for the digital out sensors and one for comms\nthis was done because its more likely one of the comms sensors will go dark and fuck up the bus, and in event of that we need a \"clean\" spi bus for sending this info to the comms module\nthe SD card is also on this for the same reason\n\nlarger mcu to avoid having to multiplex pins\n\nG4 has a boot loader <- allows over the air reprogramming\n\nthe USB PD dead batt lines arent needed but make the routing so much easier"
 		(exclude_from_sim no)
 		(at -65.024 25.908 0)
 		(size 57.404 92.202)
