@@ -220,7 +220,7 @@
           "drill": 0.3
         },
         {
-          "diameter": 1.2,
+          "diameter": 1.4,
           "drill": 1.0
         }
       ],
@@ -614,104 +614,16 @@
       "mcu"
     ],
     [
-      "f4b139c3-914b-49de-abc1-a0bad3cbe65e",
-      "high-speed-digtial-conn1"
-    ],
-    [
       "d4605b59-911a-47dc-8072-99de95361456",
       "high_speed_digital"
-    ],
-    [
-      "9b7d6bd0-4bb6-4940-8a64-141003fad1a5",
-      "analog_digital_io"
     ],
     [
       "b63f81bc-3201-4d22-bdc3-2e8eb19f6492",
       "interface"
     ],
     [
-      "47c75381-6904-4ea2-8134-7aeca0045b3c",
-      "gpio-connect1"
-    ],
-    [
-      "1ddb2927-6235-49f5-8e6a-f39536078056",
-      "gpio-connect12"
-    ],
-    [
-      "250734e1-d7f8-41b2-9321-2452fda4ecda",
-      "high-speed-digtial-conn2"
-    ],
-    [
       "64cad9c2-923b-44f2-aea0-a06750d06d38",
       "thermocouples"
-    ],
-    [
-      "b23c49c6-61fc-48c4-8510-95e902e0d831",
-      "LCD1"
-    ],
-    [
-      "7f98d1f5-c6ef-4a79-af34-d0094fbfede7",
-      "gpio-connect"
-    ],
-    [
-      "4d09fb69-4b72-4ed7-a3f3-711309dddb0f",
-      "gpio-connect2"
-    ],
-    [
-      "639113aa-1472-4abf-9c91-4d574f3fab19",
-      "gpio-connect3"
-    ],
-    [
-      "3dfdb84b-6dc4-4886-b30a-e6a3b5c62138",
-      "gpio-connect4"
-    ],
-    [
-      "0c5dcce1-13d1-4e1b-9c68-2f6b32acedff",
-      "gpio-connect5"
-    ],
-    [
-      "cfe6500c-6446-4e0c-9c7c-b4d8ba2ff85d",
-      "gpio-connect6"
-    ],
-    [
-      "0470eb99-f78d-44c4-a3af-99363b0edda3",
-      "gpio-connect7"
-    ],
-    [
-      "e70e9812-fa5c-4a04-b54f-6d2f06f4c0bc",
-      "gpio-connect8"
-    ],
-    [
-      "be31b087-47b4-4ad2-a2b9-23f161545263",
-      "gpio-connect9"
-    ],
-    [
-      "1573bd79-5555-47e0-9be6-230c66db34fe",
-      "gpio-connect10"
-    ],
-    [
-      "e0544286-5dcd-4a15-8ddf-58de9907b2c3",
-      "gpio-connect11"
-    ],
-    [
-      "2660ec62-9d91-45c9-8b52-28e8e2486bc7",
-      "high-speed-digtial-conn"
-    ],
-    [
-      "7d370875-1b85-44e6-8a09-29e5c1ee7437",
-      "gpio-connect13"
-    ],
-    [
-      "5d7d1e2d-88e6-4054-988c-8f924017c91a",
-      "high-speed-digtial-conn3"
-    ],
-    [
-      "37fbdeb5-12de-4851-b706-4912f530b6cb",
-      "high-speed-digtial-conn4"
-    ],
-    [
-      "afcbe642-6eef-41e7-bc1c-2f7d6b10c09e",
-      "high-speed-digtial-conn5"
     ],
     [
       "ab250e5c-6a0e-43ed-b42b-bd03a881d896",
