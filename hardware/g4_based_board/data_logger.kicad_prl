@@ -5,14 +5,7 @@
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [
-      "+3.3V",
-      "GND",
-      "+5V",
-      "VBUS",
-      "+5P",
-      "+VDC",
-      "-VDC",
-      "+BATT"
+      "GNDS"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -73,8 +66,8 @@
       39,
       40
     ],
-    "visible_layers": "ffcf0f0_ffffffff",
-    "zone_display_mode": 1
+    "visible_layers": "ffcf3df_7fffffff",
+    "zone_display_mode": 0
   },
   "git": {
     "repo_password": "",
