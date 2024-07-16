@@ -491,7 +491,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../../../PCBs/data_logger_grbr/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -620,10 +620,6 @@
     [
       "b63f81bc-3201-4d22-bdc3-2e8eb19f6492",
       "interface"
-    ],
-    [
-      "64cad9c2-923b-44f2-aea0-a06750d06d38",
-      "thermocouples"
     ],
     [
       "ab250e5c-6a0e-43ed-b42b-bd03a881d896",
