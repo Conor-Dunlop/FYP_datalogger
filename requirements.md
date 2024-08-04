@@ -137,3 +137,6 @@ base stations/access points? - if needed
 # sustainability requiremenets
 
 should discuss where lost devices can be bio degrade back into nature, or should they be strong enough they dont leach out anything
+
+theta_1*​cos(2*pi*f*t+theta_2​)+theta_3​*sin(2*pi*ft+theta_4​)+theta_5
+theta_1*cos(2*pi*f*t+theta_2)+theta_3*sin(2*pi*f*t+theta_4)+theta_5
