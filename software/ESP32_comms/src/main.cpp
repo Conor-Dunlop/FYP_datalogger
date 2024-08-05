@@ -5,8 +5,8 @@
 #include <HTTPClient.h>
 
 
-// const char* ssid = "REPLACE_WITH_YOUR_SSID";
-// const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+const char* ssid = "REPLACE_WITH_YOUR_SSID";
+const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 
 // this is the ip and port for the test server
 String serverName = "http://10.0.0.43:8008/";
