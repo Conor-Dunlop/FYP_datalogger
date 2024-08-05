@@ -51,7 +51,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+// SPI_HandleTypeDef hspi1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -62,6 +62,14 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+char fmt[] = "ADC:%d,count:%d,count_btn:%d,state:\"%.4s\"\r\n";
+char states[][5] = {
+  "work",
+  "off ",
+  "low ",
+  "help",
+  "okok",
+};
 
 /* USER CODE END 0 */
 
@@ -69,8 +77,7 @@ void SystemClock_Config(void);
   * @brief  The application entry point.
   * @retval int
   */
-int main(void)
-{
+int main(void){
 
   /* USER CODE BEGIN 1 */
 
@@ -104,8 +111,25 @@ int main(void)
   MX_USB_Device_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+
+  adc_t ADC_1 = {
+    .config = {
+      .Channel = ADC_CHANNEL_1,
+      .Rank = ADC_REGULAR_RANK_1,
+      .SamplingTime = ADC_SAMPLETIME_6CYCLES_5,
+      .SingleDiff = ADC_SINGLE_ENDED,
+      .OffsetNumber = ADC_OFFSET_NONE,
+      .Offset = 0
+    },
+    .hadc = &hadc1
+  };
+  
+
   uint8_t count = 0;
+  uint8_t count_btn = 0;
+  uint8_t count_state = 0;
   uint8_t buffer[255];
+  // uint16_t ADC = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -115,40 +139,54 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  int amount_of_bytes = snprintf((char*) buffer, sizeof(buffer), "count : %d\n\r", count++);
-	  // int amount_of_bytes = snprintf((char*) spi_buf, sizeof(spi_buf), "%d    ", count++);
-	  // HAL_GPIO_WritePin(COMMS_EN_1_GPIO_Port, COMMS_EN_1_Pin, GPIO_PIN_RESET);
-	  // int status = HAL_SPI_Transmit(&hspi3, spi_buf, amount_of_bytes+4, 1);
-	  // int status = HAL_SPI_Transmit(&hspi3, &count, 1, 1);
-	  // HAL_GPIO_WritePin(COMMS_EN_1_GPIO_Port, COMMS_EN_1_Pin, GPIO_PIN_SET);
-	  // USB_Print("count : %d", count++);
 
-	  switch (CDC_Transmit_FS((uint8_t*)buffer, amount_of_bytes)){
-	  case USBD_OK:
-		// if the usb serial is ok it will blink green
-	    HAL_GPIO_TogglePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin);
-	    break;
-	   case USBD_BUSY:
-		// if the device is busy i.e. plugged in but not monitoring it will blink blue
-	    HAL_GPIO_TogglePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin);
-	    break;
-	  case USBD_FAIL:
-		// if the device can support USB coms device it will blink red
-	    HAL_GPIO_TogglePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin);
-	    break;
-	  default:
-	    break;
-	  }
+  if (HAL_GPIO_ReadPin(DOWN_BTN_GPIO_Port, DOWN_BTN_Pin) == GPIO_PIN_SET) count_btn--;
+  if (HAL_GPIO_ReadPin(UP_BTN_GPIO_Port, UP_BTN_Pin) == GPIO_PIN_SET) count_btn++;
+  if (HAL_GPIO_ReadPin(ENTER_BTN_GPIO_Port, ENTER_BTN_Pin) == GPIO_PIN_SET) count_state++;
+  if (count_state >= 5) count_state = 0; 
+
+  int amount_of_bytes = snprintf((char*) buffer, sizeof(buffer), fmt, ADC_Get_val(&ADC_1), count++, count_btn, states[count_state]);
+  // int amount_of_bytes = snprintf((char*) spi_buf, sizeof(spi_buf), "%d    ", count++);
+  // HAL_GPIO_WritePin(COMMS_EN_1_GPIO_Port, COMMS_EN_1_Pin, GPIO_PIN_RESET); 
+  // int status = HAL_SPI_Transmit(&hspi3, spi_buf, amount_of_bytes+4, 1);
+  // int status = HAL_SPI_Transmit(&hspi3, &count, 1, 1);
+  // HAL_GPIO_WritePin(COMMS_EN_1_GPIO_Port, COMMS_EN_1_Pin, GPIO_PIN_SET);   
+  // USB_Print("count : %d", count++);
+
+  switch (CDC_Transmit_FS((uint8_t*)buffer, amount_of_bytes)){
+  case USBD_OK: // if the usb serial is ok it will blink green
+    HAL_GPIO_TogglePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin);
+    break;
+   case USBD_BUSY: // if the device is busy i.e. plugged in but not monitoring it will blink blue
+    HAL_GPIO_TogglePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin);
+    break;
+  case USBD_FAIL: // if the device can support USB coms device it will blink red
+    HAL_GPIO_TogglePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin);
+    break; 
+  default:
+    break;
+  }
+  HAL_UART_Transmit(&huart4, (uint8_t *)&buffer, amount_of_bytes, 0xFFFF);
+  HAL_Delay(100);
+  amount_of_bytes = snprintf((char*) buffer, sizeof(buffer), "DOWN : %d, UP : %d, enter : %d\r\n", HAL_GPIO_ReadPin(DOWN_BTN_GPIO_Port, DOWN_BTN_Pin),HAL_GPIO_ReadPin(UP_BTN_GPIO_Port, UP_BTN_Pin),HAL_GPIO_ReadPin(ENTER_BTN_GPIO_Port, ENTER_BTN_Pin));
+  
+  // i should really make this in to a function
+  switch (CDC_Transmit_FS((uint8_t*)buffer, amount_of_bytes)){
+  case USBD_OK: // if the usb serial is ok it will blink green
+    HAL_GPIO_TogglePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin);
+    break;
+   case USBD_BUSY: // if the device is busy i.e. plugged in but not monitoring it will blink blue
+    HAL_GPIO_TogglePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin);
+    break;
+  case USBD_FAIL: // if the device can support USB coms device it will blink red
+    HAL_GPIO_TogglePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin);
+    break; 
+  default:
+    break;
+  }
 
 
-	  // UART TX: SCLK
-	  // UART RX: MISO
-
-	  // DONT FORGET THAT UART TX ON THE STM32 GOES TO RX ON THE OTHER BOARD
-	  // DONT FORGET THAT UART RX ON THE STM32 GOES TO TX ON THE OTHER BOARD
-	  HAL_UART_Transmit(&huart4, (uint8_t *)&buffer, amount_of_bytes, 0xFFFF);
-	  // USB_Print("%s\n\r", spi_buf);
-	  HAL_Delay(400);
+  HAL_Delay(400);
   }
   /* USER CODE END 3 */
 }
