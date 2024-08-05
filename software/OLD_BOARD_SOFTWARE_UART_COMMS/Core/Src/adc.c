@@ -302,5 +302,32 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 }
 
 /* USER CODE BEGIN 1 */
+/* USER CODE BEGIN 1 */
+void ADC_Select(uint32_t channel, ADC_HandleTypeDef hadc){
+	ADC_ChannelConfTypeDef sConfig = {0};
+	/** Configure Regular Channel
+	*/
+	sConfig.Channel = channel;
+	sConfig.Rank = ADC_REGULAR_RANK_1;
+	sConfig.SamplingTime = ADC_SAMPLETIME_6CYCLES_5;
+	sConfig.SingleDiff = ADC_SINGLE_ENDED;
+	sConfig.OffsetNumber = ADC_OFFSET_NONE;
+	sConfig.Offset = 0;
+	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+	{
+	  Error_Handler();
+	}
+}
+
+uint16_t ADC_Get_val(adc_t* adc){
+  // logan henderson wrote this code
+	if (HAL_ADC_ConfigChannel(adc->hadc, &adc->config) != HAL_OK)Error_Handler();
+  HAL_ADC_Start(adc->hadc);
+  HAL_ADC_PollForConversion(adc->hadc, 1);
+  uint16_t val = HAL_ADC_GetValue(adc->hadc);
+  HAL_ADC_Stop(adc->hadc);
+  adc->last_value = val;
+  return val;
+}
 
 /* USER CODE END 1 */
