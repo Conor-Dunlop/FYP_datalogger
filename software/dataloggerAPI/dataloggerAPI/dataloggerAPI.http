@@ -1,0 +1,6 @@
+@dataloggerAPI_HostAddress = http://localhost:5208
+
+GET {{dataloggerAPI_HostAddress}}/getData/
+Accept: application/json
+
+###
