@@ -1,0 +1,47 @@
+14:25:44 **** Build of configuration Debug for project main_board ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'readMCP9804Temp':
+../Core/Src/main.c:64:50: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |     HAL_I2C_Master_Receive(&hi2c2, MCP9804_ADDR, &tempReg, Size,  HAL_MAX_DELAY);
+      |                                                  ^~~~~~~~
+      |                                                  |
+      |                                                  uint8_t (*)[2] {aka unsigned char (*)[2]}
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:280,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:626:97: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[2]' {aka 'unsigned char (*)[2]'}
+  626 | HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                        ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:243:9: warning: "/*" within comment [-Wcomment]
+  243 |         /*if (tempC >= 0)
+      |          
+../Core/Src/main.c:155:11: warning: unused variable 'tempRegAddr' [-Wunused-variable]
+  155 |   uint8_t tempRegAddr = 0x05;
+      |           ^~~~~~~~~~~
+../Core/Src/main.c:144:21: warning: unused variable 'sts' [-Wunused-variable]
+  144 |   HAL_StatusTypeDef sts = HAL_OK;
+      |                     ^~~
+../Core/Src/main.c:142:11: warning: unused variable 'temp' [-Wunused-variable]
+  142 |   int32_t temp;
+      |           ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:59:13: warning: 'MX_SDMMC1_SD_Init' declared 'static' but never defined [-Wunused-function]
+   59 | static void MX_SDMMC1_SD_Init(void);
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "main_board.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\New_atempt_logans_ioc\main_board\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="main_board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: main_board.elf
+ 
+arm-none-eabi-size  main_board.elf 
+arm-none-eabi-objdump -h -S main_board.elf  > "main_board.list"
+   text	   data	    bss	    dec	    hex	filename
+  18664	     12	   2908	  21584	   5450	main_board.elf
+Finished building: default.size.stdout
+ 
+Finished building: main_board.list
+ 
+
+14:25:47 Build Finished. 0 errors, 6 warnings. (took 3s.96ms)
+
