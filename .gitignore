@@ -5,3 +5,4 @@
 /hardware/*/_autosave*
 /hardware/*/~_autosave*
 \#auto_saved_files#
+software/ESP32_comms/include/secrets.h

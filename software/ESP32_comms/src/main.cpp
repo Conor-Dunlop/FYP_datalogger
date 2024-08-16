@@ -6,8 +6,8 @@
 
 #include "secrets.h"
 
-const char* ssid = SSID;
-const char* password = PASSWORD;
+const char* ssid = NETWORK_NAME;
+const char* password = NETWORK_PASSWORD;
 
 // this is the ip and port for the test server
 //String serverName = "http://10.0.0.43:8008/";
@@ -20,6 +20,7 @@ int count = 0;
 
 String headerPacket = "{loggerID:\"Wifi_testing\",timestamp:\"None\",location:\"\",sensors:";
 
+//run this function to print all network SSIDs
 void scanNetworks() {
   // scan for nearby networks:
   Serial.println("** Scan Networks **");
@@ -41,7 +42,7 @@ void setup() {
   Serial.begin(9600);
   MySerial.begin(9600, SERIAL_8N1, MySerialRX, MySerialTX);
 
-  scanNetworks();
+  //scanNetworks();
 
   WiFi.begin(ssid, password);
   Serial.println("Connecting");

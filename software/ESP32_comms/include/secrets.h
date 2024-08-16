@@ -1,7 +1,7 @@
 #ifndef SECRETS_H_
 #define SECRETS_H_
 
-#define SSID "network name"
-#define PASSWORD "password"
+#define NETWORK_NAME "network name"
+#define NETWORK_PASSWORD "password"
 
-#endif SECRETS_H_
+#endif //SECRETS_H_
