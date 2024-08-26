@@ -59,18 +59,31 @@ char SDPath[4];   // SD card logical drive path*/
 static void MX_SDMMC1_SD_Init(void);
 
 int32_t readMCP9804Temp(void) {
-    uint8_t tempReg[2] = {0};
-    //HAL_I2C_Mem_Read(&hi2c2, MCP9804_ADDR, MCP9804_REG_TEMP, I2C_MEMADD_SIZE_8BIT, tempReg, 2, HAL_MAX_DELAY); // unchecked. &hi2c2 depends on what conector to chip
-    HAL_I2C_Master_Receive(&hi2c2, MCP9804_ADDR, &tempReg, Size,  HAL_MAX_DELAY);
-    uint16_t tempRaw = (tempReg[0] << 8) | tempReg[1];
-    tempRaw &= 0x0FFF;  // Clear flags and keep 12 bits
+	uint8_t tempData[2] = {0};
+		// Receive the temperature data
+	//if (HAL_I2C_Master_Receive(&hi2c1, MCP9804_ADDR, tempData, 2, HAL_MAX_DELAY) != HAL_OK) { // Receive is unsuccessfull
+		// Reception error
+		//HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
+	//}
+	uint16_t rawTemp = (tempData[0] << 8) | tempData[1];
+	if (HAL_I2C_IsDeviceReady (&hi2c1, MCP9804_ADDR, 2, HAL_MAX_DELAY) == HAL_OK) { // Ready is unsuccessfull
+			// Reception error
+		status = HAL_I2C_Master_Transmit(&hi2c1, MCP9804_ADDR, &tempRegAddr, 1, HAL_MAX_DELAY);
+		if (status != HAL_OK) {
+			HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
+			HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
+			HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
+		} else {
+			tempRaw &= 0x0FFF;  // Clear flags and keep 12 bits
 
-    int32_t tempC = tempRaw & 0x0FFF;
-    tempC /= 16.0;
+			int32_t tempC = tempRaw & 0x0FFF;
+			tempC /= 16.0;
 
-    if (tempRaw & 0x1000) {  // Check sign bit
-        tempC -= 256.0;
-    }
+			if (tempRaw & 0x1000) {  // Check sign bit
+			  tempC -= 256.0;
+			}
+		}
+	}
 
     return tempC;
 }
@@ -136,12 +149,17 @@ int main(void)
 
   uint32_t status = HAL_ERROR;
 
+  int num_bytes = 4;
 
-  uint8_t dataToSend = 0x5; // Example data
+  uint8_t dataToSend[4] = 0x5;
+  dataToSend[0] = 0x5;// Example data
+  dataToSend[1] = 0x5;// Example data
+  dataToSend[2] = 0x5;// Example data
+  dataToSend[3] = 0x5;// Example data
 
   int32_t temp;
 
-  HAL_StatusTypeDef sts = HAL_OK;
+  //HAL_StatusTypeDef sts = HAL_OK;
 
   HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_SET); // Turn off success LED
   HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn off error LED
@@ -171,7 +189,7 @@ int main(void)
 
 	HAL_Delay(1000);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_SET); // CS low Digital IO 1 COMM_EN_3
-	status = HAL_SPI_Transmit(&hspi1, &dataToSend, 1, HAL_MAX_DELAY);  // Transmit is unsuccessful??? maybe working but no output on arduino
+	status = HAL_SPI_Transmit(&hspi1, (uint8_t *)&dataToSend, num_bytes, HAL_MAX_DELAY);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_RESET); // CS high Digital IO 1 COMM_EN_3
 
 	if (status == HAL_OK)
@@ -192,40 +210,14 @@ int main(void)
 	}
 
 
-	/*
+
 	HAL_Delay(1000);
-	uint8_t tempData[2] = {0};
-	if (HAL_I2C_Master_Transmit(&hi2c1, MCP9804_ADDR, &tempRegAddr, 1, HAL_MAX_DELAY) != HAL_OK) { // transmit is successfull
-		// Transmission error
-		HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
-	}
+	int32_t tempC = readMCP9804Temp();
+	dataToSend[0] = (tempC >> 24) & 0xFF;
+	dataToSend[1] = (tempC >> 16) & 0xFF;
+	dataToSend[2] = (tempC >> 8) & 0xFF;
+	dataToSend[3] = tempC & 0xFF;
 
-	// Receive the temperature data
-	//if (HAL_I2C_Master_Receive(&hi2c1, MCP9804_ADDR, tempData, 2, HAL_MAX_DELAY) != HAL_OK) { // Receive is unsuccessfull
-		// Reception error
-		//HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
-	//}
-	uint16_t rawTemp = (tempData[0] << 8) | tempData[1];
-	if (HAL_I2C_IsDeviceReady (&hi2c1, MCP9804_ADDR, 1, HAL_MAX_DELAY) != HAL_OK) { // Ready is unsuccessfull
-			// Reception error
-			HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
-		}
-	*/
-
-	/*
-	uint8_t tempReg[2] = {0};
-
-	sts = HAL_I2C_Master_Receive(&hi2c2, MCP9804_ADDR, &tempReg, Size,  HAL_MAX_DELAY);
-	uint16_t tempRaw = (tempReg[0] << 8) | tempReg[1];
-	tempRaw &= 0x0FFF;  // Clear flags and keep 12 bits
-
-	int32_t tempC = tempRaw & 0x0FFF;
-	tempC /= 16.0;
-
-	if (tempRaw & 0x1000) {  // Check sign bit
-	  tempC -= 256.0;
-	}
-	*/
 	  /*
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET); // CS high Digital IO 1
     status = HAL_SPI_Transmit(&hspi1, &dataToSend, 1, HAL_MAX_DELAY);
