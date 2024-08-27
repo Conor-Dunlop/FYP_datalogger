@@ -108,12 +108,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	HAL_GPIO_TogglePin(STATUS_GPIO_Port, STATUS_Pin);
-	HAL_Delay(100);
-	HAL_GPIO_TogglePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin);
-	HAL_Delay(100);
-	HAL_GPIO_TogglePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin);
-	HAL_Delay(100);
 
     /* USER CODE BEGIN 3 */
   }

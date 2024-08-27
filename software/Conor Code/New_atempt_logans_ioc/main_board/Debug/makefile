@@ -60,8 +60,8 @@ all: main-build
 main-build: main_board.elf secondary-outputs
 
 # Tool invocations
-main_board.elf main_board.map: $(OBJS) $(USER_OBJS) C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\New_atempt_logans_ioc\main_board\STM32G431RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "main_board.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\New_atempt_logans_ioc\main_board\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="main_board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+main_board.elf main_board.map: $(OBJS) $(USER_OBJS) C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\git\enel400-data-logger\software\Conor\ Code\New_atempt_logans_ioc\main_board\STM32G431RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "main_board.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\git\enel400-data-logger\software\Conor Code\New_atempt_logans_ioc\main_board\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="main_board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

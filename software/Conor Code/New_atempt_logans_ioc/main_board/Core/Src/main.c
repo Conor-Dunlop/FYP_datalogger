@@ -56,35 +56,35 @@ uint16_t Size = 8;
 FIL MyFile;       // File object
 char SDPath[4];   // SD card logical drive path*/
 /* USER CODE BEGIN PV */
-static void MX_SDMMC1_SD_Init(void);
+//static void MX_SDMMC1_SD_Init(void);
 
-int32_t readMCP9804Temp(void) {
+int32_t readMCP9804Temp(uint8_t tempRegAddr) {
 	uint8_t tempData[2] = {0};
+	int32_t tempC = -100;
 		// Receive the temperature data
-	//if (HAL_I2C_Master_Receive(&hi2c1, MCP9804_ADDR, tempData, 2, HAL_MAX_DELAY) != HAL_OK) { // Receive is unsuccessfull
+	//if (HAL_I2C_Master_Receive(&hi2c2, MCP9804_ADDR, tempData, 2, HAL_MAX_DELAY) != HAL_OK) { // Receive is unsuccessfull
 		// Reception error
 		//HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
 	//}
-	uint16_t rawTemp = (tempData[0] << 8) | tempData[1];
-	if (HAL_I2C_IsDeviceReady (&hi2c1, MCP9804_ADDR, 2, HAL_MAX_DELAY) == HAL_OK) { // Ready is unsuccessfull
+	if (HAL_I2C_IsDeviceReady (&hi2c2, MCP9804_ADDR, 2, HAL_MAX_DELAY) == HAL_OK) { // Ready is unsuccessfull
 			// Reception error
-		status = HAL_I2C_Master_Transmit(&hi2c1, MCP9804_ADDR, &tempRegAddr, 1, HAL_MAX_DELAY);
-		if (status != HAL_OK) {
+		if (HAL_I2C_Master_Transmit(&hi2c2, MCP9804_ADDR, &tempRegAddr, 1, HAL_MAX_DELAY) != HAL_OK) {
 			HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
 			HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
 			HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
 		} else {
-			tempRaw &= 0x0FFF;  // Clear flags and keep 12 bits
+			HAL_I2C_Master_Receive(&hi2c2, MCP9804_ADDR, tempData, 2, HAL_MAX_DELAY);
+			uint16_t rawTemp = (tempData[0] << 8) | tempData[1];
+			rawTemp &= 0x0FFF;  // Clear flags and keep 12 bits
 
-			int32_t tempC = tempRaw & 0x0FFF;
+			int32_t tempC = rawTemp & 0x0FFF;
 			tempC /= 16.0;
 
-			if (tempRaw & 0x1000) {  // Check sign bit
+			if (rawTemp & 0x1000) {  // Check sign bit
 			  tempC -= 256.0;
 			}
 		}
 	}
-
     return tempC;
 }
 
@@ -108,7 +108,7 @@ void SystemClock_Config(void);
   * @retval int
   */
 
-I2C_HandleTypeDef hi2c1;
+//I2C_HandleTypeDef hi2c2;   //causing error but shouldnt
 
 
 int main(void)
@@ -151,13 +151,11 @@ int main(void)
 
   int num_bytes = 4;
 
-  uint8_t dataToSend[4] = 0x5;
+  uint8_t dataToSend[4];
   dataToSend[0] = 0x5;// Example data
   dataToSend[1] = 0x5;// Example data
   dataToSend[2] = 0x5;// Example data
   dataToSend[3] = 0x5;// Example data
-
-  int32_t temp;
 
   //HAL_StatusTypeDef sts = HAL_OK;
 
@@ -166,9 +164,9 @@ int main(void)
   HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_SET); // Turn off error LED
 
 
-  if (HAL_I2C_Init(&hi2c1) != HAL_OK) {
+  if (HAL_I2C_Init(&hi2c2) != HAL_OK) {
           // Initialization error
-	  HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_RESET); // Turn off success LED
+	  HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_RESET); // Turn on status LED
       }
   uint8_t tempRegAddr = 0x05;
   /* USER CODE END 2 */
@@ -212,7 +210,16 @@ int main(void)
 
 
 	HAL_Delay(1000);
-	int32_t tempC = readMCP9804Temp();
+	HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_SET); // Turn on error LED
+	HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
+	HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
+	int32_t tempC = readMCP9804Temp(tempRegAddr);
+	if (tempC == -100) {
+		//temp read error
+		HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
+		HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn of error LED
+		HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_RESET); // Turn of success LED
+	}
 	dataToSend[0] = (tempC >> 24) & 0xFF;
 	dataToSend[1] = (tempC >> 16) & 0xFF;
 	dataToSend[2] = (tempC >> 8) & 0xFF;
@@ -232,7 +239,7 @@ int main(void)
 	HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
 	}
 
-	/*if (tempC >= 0)
+	if (tempC >= 0)
 	{
 	HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
 	}
