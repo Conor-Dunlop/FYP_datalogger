@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "sVKEGszCDnx/oPxTGOru+0JGrJNKMJ5FbYqtxE89s0c=",
+  "Source": "dataloggerAPI",
+  "BasePath": "_content/dataloggerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
