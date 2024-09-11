@@ -1,0 +1,4 @@
+../Core/Src/main.c:61:9:readMCP9804Temp	2
+../Core/Src/main.c:101:5:main	4
+../Core/Src/main.c:262:6:SystemClock_Config	3
+../Core/Src/main.c:312:6:Error_Handler	1
