@@ -17,7 +17,7 @@
 
   "Tracker1" (buffer)      - trackerID
   1+             (uint32_t)    - packet count
-  51.23456       (float)       - latitude
+  51.23456       (g:\DownloadsG\SX12XX-LoRa-master.zipfloat)       - latitude
   -3.12345       (float)       - longitude
   199            (uint16_t)    - altitude
   8              (uint8_t)     - number of satellites
@@ -88,62 +88,31 @@ void loop()
   }
 
   // digitalWrite(LED1, LOW);
-  Serial.println("led status is ");
-  Serial.print(led_status);
+  // Serial.println("led status is ");
+  // Serial.print(led_status);
 }
 
 
 uint8_t packet_is_OK()
 {
-  // float latitude, longitude;
-  // uint16_t altitude, voltage;
-  // uint8_t satellites;
-  // int8_t temperature;
-  // uint32_t txcount;
-
-  // uint8_t receivebuffer[16];            //create receive buffer, make sure this is big enough for buffer sent !!!
 
   //packet has been received, now read from the SX12xx Buffer using the same variable type and
   //order as the transmit side used.
-
 
   RXpacketCount++;
   Serial.print(RXpacketCount);
   Serial.print(F("  "));
 
   LT.startReadSXBuffer(0);               //start buffer read at location 0
-  // LT.readBuffer(receivebuffer);          //read in the character buffer
-  // txcount  = LT.readUint32();            //read in the TXCount
-  // latitude = LT.readFloat();             //read in the latitude
-  // longitude = LT.readFloat();            //read in the longitude
-  // altitude = LT.readUint16();            //read in the altitude
-  // satellites = LT.readUint8();           //read in the number of satellites
-  // voltage = LT.readUint16();             //read in the voltage
-  // temperature = LT.readInt8();           //read in the temperature
-  led_status = LT.readUint16();
-  RXPacketL = LT.endReadSXBuffer();
 
-  // Serial.print((char*)receivebuffer);    //print the received buffer, cast to char needed
-  // Serial.print(F(","));
+  char receivedBuffer[255];  // Buffer to store the received string
+  LT.readBufferChar(receivedBuffer);  // Read the string data from the SX buffer
+  
+  RXPacketL = LT.endReadSXBuffer();  // End the buffer read
 
-  // Serial.print(F(","));
-  // Serial.print(latitude, 5);
-  // Serial.print(F(","));
-  // Serial.print(longitude, 5);
-  // Serial.print(F(","));
-  // Serial.print(altitude);
-  // Serial.print(F("m,"));
-  // Serial.print(satellites);
-  // Serial.print(F("sats,"));
-  // Serial.print(voltage);
-  // Serial.print(F("mV,"));
-  // Serial.print(temperature);
-  // Serial.print(F("c "));
-  // Serial.print(F("  RSSI"));
-  // Serial.print(PacketRSSI);
-  // Serial.print(F("dBm,SNR,"));
-  // Serial.print(PacketSNR);
-  // Serial.print(F("dB"));
+  Serial.print(F("Received: "));
+  Serial.println(receivedBuffer);  // Print the received string
+
   return RXPacketL;
 }
 
@@ -195,7 +164,7 @@ void led_Flash(uint16_t flashes, uint16_t delaymS)
 void setup()
 {
   pinMode(LED1, OUTPUT);
-  pinMode(LED_PIN, OUTPUT);
+  // pinMode(LED_PIN, OUTPUT);
   led_Flash(2, 125);
 
   Serial.begin(9600);

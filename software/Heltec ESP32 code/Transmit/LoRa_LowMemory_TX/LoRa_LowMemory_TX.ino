@@ -37,7 +37,7 @@
 #include "Settings.h"
 #include <HardwareSerial.h>
 
-#define BUTTON_PIN 34
+// #define BUTTON_PIN 34
 
 HardwareSerial MySerial(1); // define a Serial for UART1
 const int MySerialRX = 19;
@@ -83,13 +83,14 @@ void loop()
 
 
 
-  Send_Test_Packet();
+
   Serial.print(TXpacketCount);
   Serial.print(F(" "));
   Serial.print(TXPacketL);
   Serial.print(F(" Bytes Sent"));
   Serial.print(F(" "));
   Serial.print(endmS - startmS);    Serial.print(F("mS"));
+  Send_Test_Packet();
   // Serial.println("LED status is");
   // Serial.print(led_status);
   // }
@@ -108,41 +109,19 @@ uint8_t Send_Test_Packet()
 {
   //The SX12XX buffer is filled with variables of a known type and order. Make sure the receiver
   //uses the same variable type and order to read variables out of the receive buffer.
-
-//   float latitude, longitude; [commented out start]
-//   uint16_t altitude, voltage;
-//   uint8_t satellites;
-//   int16_t temperature;
   uint8_t len;
-
-  //test data
-//   uint8_t trackerID[] = "tracker1";
-//   latitude = 51.23456;
-//   longitude = -3.12345;
-//   altitude = 199;
-//   satellites = 9;
-//   voltage = 3999;
-//   temperature = -9; [commented out finish]
+  result = "";
   
   while(MySerial.available() > 0){
-    String result = MySerial.readStringUntil('\r'); 
-    Serial.print(result);
+    result += MySerial.readStringUntil('\r'); 
   }
+  Serial.print(result);
   delay(100);
 
   LT.startWriteSXBuffer(0);                         //start the write at location 0
   // LT.writeChar(led_status);
   // LT.writeUint16(led_status);
   LT.writeBufferChar(&result[0], result.length());
-  // type cast this
-  // LT.writeBuffer(led_status);     //= 13 bytes (12 characters plus null (0) at end)
-//   LT.writeUint32(TXpacketCount);                    //+4 = 17 bytes
-//   LT.writeFloat(latitude);                          //+4 = 21 bytes
-//   LT.writeFloat(longitude);                         //+4 = 25 bytes
-//   LT.writeUint16(altitude);                         //+2 = 27 bytes
-//   LT.writeUint8(satellites);                        //+1 = 28 bytes
-//   LT.writeUint16(voltage);                          //+2 = 30 bytes
-//   LT.writeInt8(temperature);                        //+1 = 31 bytes total to send
 
 
   len = LT.endWriteSXBuffer();
@@ -176,7 +155,7 @@ void led_Flash(uint16_t flashes, uint16_t delaymS)
 void setup()
 {
 
-  pinMode(BUTTON_PIN, INPUT);
+  // pinMode(BUTTON_PIN, INPUT);
   led_Flash(2, 125);
 
   Serial.begin(9600);
