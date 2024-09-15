@@ -1,0 +1,17 @@
+16:50:52 **** Incremental Build of configuration Debug for project datalogger ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "datalogger.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\git\enel400-data-logger\software\Conor Code\New_atempt_logans_ioc\datalogger\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="datalogger.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: datalogger.elf
+ 
+arm-none-eabi-size  datalogger.elf 
+arm-none-eabi-objdump -h -S datalogger.elf  > "datalogger.list"
+   text	   data	    bss	    dec	    hex	filename
+  23968	     12	   2828	  26808	   68b8	datalogger.elf
+Finished building: default.size.stdout
+ 
+Finished building: datalogger.list
+ 
+
+16:50:53 Build Finished. 0 errors, 0 warnings. (took 1s.138ms)
+

@@ -861,3 +861,42 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-27 13:23:16.742
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-27 16:42:46.965
+!MESSAGE Indexed 'datalogger' (45 sources, 137 headers) in 4.11 sec: 15,074 declarations; 83,947 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-27 16:42:49.761
+!MESSAGE Indexed 'main_board' (45 sources, 137 headers) in 2.75 sec: 15,089 declarations; 84,161 references; 3 unresolved inclusions; 46 syntax errors; 180 unresolved names (0.18%)
+!SESSION 2024-08-27 16:44:15.223 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-27 16:44:54.422
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-27 16:44:54.430
+!MESSAGE Log4j2 initialized with config file C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\git\enel400-data-logger\software\Conor Code\New_atempt_logans_ioc\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-27 16:44:58.184
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-27 16:46:35.965
+!MESSAGE Indexed 'datalogger' (45 sources, 111 headers) in 4.32 sec: 9,936 declarations; 69,633 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0025%)
+!SESSION 2024-08-29 10:09:10.304 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-29 10:10:14.791
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-29 10:10:14.798
+!MESSAGE Log4j2 initialized with config file C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\git\enel400-data-logger\software\Conor Code\New_atempt_logans_ioc\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-29 10:10:21.998
+!MESSAGE Started RMI Server, listening on port 41337
