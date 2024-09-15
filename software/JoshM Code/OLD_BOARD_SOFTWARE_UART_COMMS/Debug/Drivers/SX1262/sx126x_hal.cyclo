@@ -1,0 +1,4 @@
+../Drivers/SX1262/sx126x_hal.c:6:21:sx126x_hal_write	5
+../Drivers/SX1262/sx126x_hal.c:51:21:sx126x_hal_read	3
+../Drivers/SX1262/sx126x_hal.c:94:21:sx126x_hal_reset	1
+../Drivers/SX1262/sx126x_hal.c:110:21:sx126x_hal_wakeup	1
