@@ -1,0 +1,57 @@
+!SESSION 2024-09-06 13:37:49.757 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Framework arguments:  C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-06 13:38:07.398
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-06 13:38:07.405
+!MESSAGE Log4j2 initialized with config file C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\v2workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-06 13:38:11.445
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-06 13:38:19.936
+!MESSAGE Indexed 'NEW_G4_software' (58 sources, 158 headers) in 6.8 sec: 19,118 declarations; 103,422 references; 7 unresolved inclusions; 2,345 syntax errors; 3,415 unresolved names (2.7%)
+!SESSION 2024-09-08 14:59:12.933 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Framework arguments:  C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-08 15:14:29.304
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-08 15:14:29.312
+!MESSAGE Log4j2 initialized with config file C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\v2workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-08 15:14:37.188
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-08 15:14:43.554
+!MESSAGE Indexed 'NEW_G4_software' (58 sources, 157 headers) in 6.07 sec: 18,994 declarations; 109,255 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.13%)
+!SESSION 2024-09-12 09:16:58.458 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Framework arguments:  C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-12 09:18:18.245
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-12 09:18:18.253
+!MESSAGE Log4j2 initialized with config file C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\v2workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-12 09:18:32.251
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-12 09:18:41.214
+!MESSAGE Indexed 'NEW_G4_software' (58 sources, 157 headers) in 8.56 sec: 18,993 declarations; 109,255 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.13%)

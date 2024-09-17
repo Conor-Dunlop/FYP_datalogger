@@ -1,0 +1,4 @@
+../Drivers/SX1262/sx126x_hal.c:6:21:sx126x_hal_write	32	static
+../Drivers/SX1262/sx126x_hal.c:51:21:sx126x_hal_read	32	static
+../Drivers/SX1262/sx126x_hal.c:94:21:sx126x_hal_reset	16	static
+../Drivers/SX1262/sx126x_hal.c:110:21:sx126x_hal_wakeup	24	static
