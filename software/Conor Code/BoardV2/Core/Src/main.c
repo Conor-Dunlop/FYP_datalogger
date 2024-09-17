@@ -63,9 +63,9 @@ char SDPath[4];   // SD card logical drive path*/
 //static void MX_SDMMC1_SD_Init(void);
 
 int32_t readMCP9804Temp(uint8_t tempRegAddr) {
-	uint8_t tempData[2] = {0};
+	uint8_t tempData[2];
 	int32_t tempC = -100;
-	uint8_t store = tempRegAddr;
+	uint8_t store = MCP9804_REG_TEMP;
 	if (HAL_I2C_IsDeviceReady (&hi2c2, MCP9804_ADDR, 2, HAL_MAX_DELAY) == HAL_OK) { // Ready is unsuccessfull
 			// Reception error
 		if (HAL_I2C_Master_Transmit(&hi2c2, MCP9804_ADDR, &store, 1, HAL_MAX_DELAY) != HAL_OK) {
