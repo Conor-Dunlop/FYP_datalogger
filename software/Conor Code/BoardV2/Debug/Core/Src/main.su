@@ -1,5 +1,4 @@
-../Core/Src/main.c:65:9:readMCP9804Temp	40	static
-../Core/Src/main.c:86:9:Read_Temperature	40	static
-../Core/Src/main.c:138:5:main	288	static
-../Core/Src/main.c:279:6:SystemClock_Config	88	static
-../Core/Src/main.c:330:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:69:9:readMCP9804Temp	40	static
+../Core/Src/main.c:104:5:main	48	static
+../Core/Src/main.c:238:6:SystemClock_Config	88	static
+../Core/Src/main.c:289:6:Error_Handler	4	static,ignoring_inline_asm

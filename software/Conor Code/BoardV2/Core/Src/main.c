@@ -51,8 +51,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-#define MCP9804_ADDR 0b0011000 // the last 3 digits change for each pin
+#define MCP9804_ADDR 0b00110000 // the last 3 digits change for each pin
 #define MCP9804_REG_TEMP 0x05
+
+#define AVG_SLOPE (4.3F)
+#define V_AT_25C  (1.43F)
+#define V_REF_INT (1.2F)
 
 uint16_t Size = 8;
 
@@ -65,7 +69,7 @@ char SDPath[4];   // SD card logical drive path*/
 int32_t readMCP9804Temp(uint8_t tempRegAddr) {
 	uint8_t tempData[2];
 	int32_t tempC = -100;
-	uint8_t store = tempRegAddr;
+	uint8_t store = 0b00000101;
 	HAL_I2C_Master_Transmit(&hi2c2, MCP9804_ADDR, &store, 1, HAL_MAX_DELAY);
 	HAL_I2C_Master_Receive(&hi2c2, MCP9804_ADDR, tempData, 2, HAL_MAX_DELAY);
 
@@ -80,43 +84,6 @@ int32_t readMCP9804Temp(uint8_t tempRegAddr) {
 }
 
 
-uint8_t UpperByte, LowerByte;
-
-
-int32_t Read_Temperature(void) {
-	int32_t Temperature = -100;
-    uint8_t AddressByte = (MCP9804_ADDR << 1); // Convert 7-bit to 8-bit address
-    uint8_t TA_Register = 0x05;
-    uint8_t anded = (AddressByte & 0xFE);
-    uint8_t read = (AddressByte | 0x01);
-    uint8_t data[2];
-    // WRITE command
-    if (HAL_I2C_Master_Transmit(&hi2c2, MCP9804_ADDR, &TA_Register, 5, HAL_MAX_DELAY) != HAL_OK) {
-    	//HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
-    	HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
-    	HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
-        //return;
-    }
-    // Send REPEAT START and READ command
-    if (HAL_I2C_Master_Receive_IT(&hi2c2, read, &data, 2) != HAL_OK) {
-    	//HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
-    	HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
-    	HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
-        //return;
-    }
-    // Convert to temperature
-    if ((UpperByte & 0x10) == 0x10) {
-        // TA < 0°C
-        UpperByte = UpperByte & 0x0F; // Clear SIGN
-        Temperature = 256 - (UpperByte * 16 + LowerByte / 16.0);
-    } else {
-        // TA ≥ 0°C
-        Temperature = (UpperByte * 16 + LowerByte / 16.0);
-    }
-    return Temperature;
-}
-
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -127,7 +94,6 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 
 /* USER CODE END 0 */
 
@@ -176,12 +142,11 @@ int main(void)
 
     uint8_t dataToSend[4];
     dataToSend[0] = 0xFF;// Example data
-    dataToSend[1] = 0x5;// Example data
-    dataToSend[2] = 0xF0;// Example data
-    dataToSend[3] = 0xF;// Example data
+    dataToSend[1] = 0x0;// Example data
+    dataToSend[2] = 0xF;// Example data
+    dataToSend[3] = 0xF0;// Example data
 
     //HAL_StatusTypeDef sts = HAL_OK;
-
 
     HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_SET); // Turn off success LED
     HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn off error LED
@@ -193,78 +158,72 @@ int main(void)
   	  HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on status LED
         }
     uint8_t tempRegAddr = 0x05;
-    uint8_t buffer[255];
+
+    uint16_t AD_RES[2];
+    int32_t Temperature, V_Sense, V_Ref;
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AD_RES, 2);   // Start ADC Conversion
+
+    uint8_t initials = 0b00000010;
+    HAL_I2C_Master_Transmit(&hi2c2, MCP9804_ADDR, &initials, 1, HAL_MAX_DELAY);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
     while (1)
-    {
-    	HAL_Delay(10);
-    	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_SET); // CS low Digital IO 1 COMM_EN_3
-    	status = HAL_SPI_Transmit(&hspi1, &dataToSend, num_bytes, HAL_MAX_DELAY);
-    	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_RESET); // CS high Digital IO 1 COMM_EN_3
-    	/*
-    	if (status == HAL_OK)
-    	{
-    		HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
-    		HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
-    		HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
-    	} else if (status == HAL_BUSY){
-    		HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
-    		HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
-    		HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
-    	}
-    	else
-    	{
-    		HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
-    		HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
-    		HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
-    	}	*/
-
-
-    	HAL_Delay(10);
-    	//HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_SET); // Turn off error LED
-    	//HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_SET); // Turn of error LED
-    	//HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_SET); // Turn of success LED
-    	int32_t tempC = readMCP9804Temp(MCP9804_ADDR);
-    	//int32_t tempC = tempRegAddrRead_Temperature();
-    	/*if ((tempC >= 120)) {
-    		//temp read error
-    		HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
-    		HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
-    		HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
-    	} */
-    	dataToSend[0] = (tempC >> 24) & 0xFF;
-    	dataToSend[1] = (tempC >> 16) & 0xFF;
-    	dataToSend[2] = (tempC >> 8) & 0xFF;
-    	dataToSend[3] = tempC & 0xFF;
-
-    	/*HAL_Delay(100);
-    	int amount_of_bytes = snprintf((char*) buffer, sizeof(buffer), "Temp:%ld \r\n" , tempC);
-    	  // int amount_of_bytes = snprintf((char*) spi_buf, sizeof(spi_buf), "%d    ", count++);
-    	  // HAL_GPIO_WritePin(COMMS_EN_1_GPIO_Port, COMMS_EN_1_Pin, GPIO_PIN_RESET);
-    	  // int status = HAL_SPI_Transmit(&hspi3, spi_buf, amount_of_bytes+4, 1);
-    	  // int status = HAL_SPI_Transmit(&hspi3, &count, 1, 1);
-    	  // HAL_GPIO_WritePin(COMMS_EN_1_GPIO_Port, COMMS_EN_1_Pin, GPIO_PIN_SET);
-    	  // USB_Print("count : %d", count++);
-
-    	  switch (CDC_Transmit_FS((uint8_t*)buffer, amount_of_bytes)){
-    	  case USBD_OK: // if the usb serial is ok it will blink green
-    	    HAL_GPIO_TogglePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin);
-    	    break;
-    	   case USBD_BUSY: // if the device is busy i.e. plugged in but not monitoring it will blink blue
-    	    HAL_GPIO_TogglePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin);
-    	    break;
-    	  case USBD_FAIL: // if the device can support USB coms device it will blink red
-    	    HAL_GPIO_TogglePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin);
-    	    break;
-    	  default:
-    	    break;
+    {// mototola or TIS versions who knows which is on or compatable with arduino due to (Frame Formats) for spi
+        /* USER CODE END WHILE */
+    	  /*if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_14))
+    	  {
+    		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
+    	  }
+    	  else
+    	  {
+    		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET);
     	  }*/
 
 
+    	HAL_Delay(10);
+    	HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET);
+    	HAL_UART_Transmit(&huart4,(uint8_t*)dataToSend, 4, HAL_MAX_DELAY);
+    	HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_SET);
+
+    	HAL_Delay(10);
+    	HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET);
+    	int32_t tempC = readMCP9804Temp(tempRegAddr);
+    	dataToSend[0] = (tempC >> 24) & 0xFF;
+		dataToSend[1] = (tempC >> 16) & 0xFF;
+		dataToSend[2] = (tempC >> 8) & 0xFF;
+		dataToSend[3] = tempC & 0xFF;
+    	HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_SET);
+
+    	HAL_Delay(10);
+    	//V_Ref = (float)((V_REF_INT * 4095.0)/AD_RES[0]);
+	    //V_Sense = (float)(AD_RES[1] * V_Ref) / 4095.0;
+	    //Temperature = (((V_AT_25C - V_Sense) * 1000.0) /AVG_SLOPE) + 25.0;
+
+    	  /*
+    	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET); // CS high Digital IO 1
+        status = HAL_SPI_Transmit(&hspi1, &dataToSend, 1, HAL_MAX_DELAY);
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET); // CS high Digital IO 0
+    	HAL_I2C_Mem_Read(&hi2c2, MCP9804_ADDR, MCP9804_REG_TEMP, I2C_MEMADD_SIZE_8BIT, tempReg, 2, HAL_MAX_DELAY); // unchecked. &hi2c2 depends on what conector to chip
+    	if (sts == HAL_OK)
+    	{
+    	HAL_GPIO_WritePin(ERROR_STATUS_GPIO_Port, ERROR_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
+    	}
+    	else
+    	{
+    	HAL_GPIO_WritePin(WARN_STATUS_GPIO_Port, WARN_STATUS_Pin, GPIO_PIN_RESET); // Turn on error LED
+    	}
+
+    	if (tempC >= 0)
+    	{
+    	HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_RESET); // Turn on success LED
+    	}
+    	else
+    	{
+    	HAL_GPIO_WritePin(OK_STATUS_GPIO_Port, OK_STATUS_Pin, GPIO_PIN_SET); // Turn on error LED
+    	}*/
 
 
         /* USER CODE BEGIN 3 */

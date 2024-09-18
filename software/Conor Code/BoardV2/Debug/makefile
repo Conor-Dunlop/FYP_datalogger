@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (12.3.rel1)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -64,8 +64,8 @@ all: main-build
 main-build: NEW_G4_software.elf secondary-outputs
 
 # Tool invocations
-NEW_G4_software.elf NEW_G4_software.map: $(OBJS) $(USER_OBJS) C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\STM32G431RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "NEW_G4_software.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\conor\OneDrive\Desktop\Random_uni\fyp\BoardV2\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEW_G4_software.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+NEW_G4_software.elf NEW_G4_software.map: $(OBJS) $(USER_OBJS) P:\ENEL400\Latest\ code\enel400-data-logger\software\Conor\ Code\BoardV2\STM32G431RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "NEW_G4_software.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"P:\ENEL400\Latest code\enel400-data-logger\software\Conor Code\BoardV2\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NEW_G4_software.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

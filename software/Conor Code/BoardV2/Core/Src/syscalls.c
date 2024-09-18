@@ -29,7 +29,7 @@
 #include <time.h>
 #include <sys/time.h>
 #include <sys/times.h>
-#include "usb_device.h"
+
 
 /* Variables */
 extern int __io_putchar(int ch) __attribute__((weak));
@@ -82,15 +82,11 @@ __attribute__((weak)) int _write(int file, char *ptr, int len)
   (void)file;
   int DataIdx;
 
-
-  if (CDC_Transmit_FS((uint8_t*)ptr, len) == USBD_OK) return len;
-  return -1;
-
-//  for (DataIdx = 0; DataIdx < len; DataIdx++)
-//  {
-//    __io_putchar(*ptr++);
-//  }
-//  return len;
+  for (DataIdx = 0; DataIdx < len; DataIdx++)
+  {
+    __io_putchar(*ptr++);
+  }
+  return len;
 }
 
 int _close(int file)
