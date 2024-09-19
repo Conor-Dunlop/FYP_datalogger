@@ -91,6 +91,7 @@ void loop()
   Serial.print(F(" "));
   Serial.print(endmS - startmS);    Serial.print(F("mS"));
   Send_Test_Packet();
+  delay(500);
   // Serial.println("LED status is");
   // Serial.print(led_status);
   // }
@@ -113,7 +114,7 @@ uint8_t Send_Test_Packet()
   result = "";
   
   while(MySerial.available() > 0){
-    result += MySerial.readStringUntil('\r'); 
+    result = MySerial.readStringUntil('\n'); 
   }
   Serial.print(result);
   delay(100);
@@ -128,6 +129,8 @@ uint8_t Send_Test_Packet()
 
   digitalWrite(LED1, HIGH);
   startmS = millis();
+
+
 
   TXPacketL = LT.transmitSXBuffer(0, len, 5000, TXpower, WAIT_TX);   //set a TX timeout of 5000mS
 
@@ -181,4 +184,3 @@ void setup()
   Serial.println(F("Transmitter ready"));
   Serial.println();
 }
-

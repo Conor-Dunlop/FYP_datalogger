@@ -31,10 +31,13 @@
 #include <SPI.h>
 #include <SX126XLT.h>
 #include "Settings.h"
-
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include <HardwareSerial.h>
 // #define LED_PIN 7
 
 SX126XLT LT;
+
 
 uint32_t RXpacketCount;
 uint16_t errors;
@@ -43,32 +46,25 @@ uint8_t RXPacketL;               //length of received packet
 int8_t  PacketRSSI;              //RSSI of received packet
 int8_t  PacketSNR;               //signal to noise ratio of received packet
 String result = "";
+char receivedBuffer[255];  // Buffer to store the received string
 
-// struct Data {
-//   // uint8_t buff[];  
-//   int8_t led_status;
-// } data_t;
+const char* ssid = "Space_isnt_real";
+const char* password = "fuckmoneygetbitches";
+
+
+
+String serverName = "https://dataloggerapi.azurewebsites.net/logData";
+String headerPacket = "{\"loggerID\":\"Wifi_testing\",\"sensorID\":\"ALL\",\"timestamp\":\"2024-09-18T02:56:57.336Z\",\"data\":\"";
+
+
 uint16_t led_status;
-
-// void button_pressed()
-// {
-//   if (led_status == 1) {
-//     digitalWrite(LED_PIN, HIGH);
-//     // Serial.println("bruh bruh");
-//   }
-//   else {
-//     // led_status = off
-//     digitalWrite(LED_PIN, LOW);
-//     // Serial.println("else workin?");
-//   }
-
-// }
-
-
 
 
 void loop()
 {
+
+
+
   // digitalWrite(LED?_PIN, HIGH);
   // Serial.println("trying to turn LED on ");  
   RXPacketL = LT.receiveSXBuffer(0, 0, WAIT_RX);       //returns 0 if packet error of some sort, no timeout
@@ -87,9 +83,46 @@ void loop()
     packet_is_OK();
   }
 
-  // digitalWrite(LED1, LOW);
-  // Serial.println("led status is ");
-  // Serial.print(led_status);
+  // String result = MySerial.readStringUntil('\n'); 
+
+  // Serial.println(result);
+  result = String(receivedBuffer);
+  result.replace("\n", "");
+  result.replace("\r", "");
+  result.replace("\"", "'");
+  Serial.println(WiFi.status() == WL_CONNECTED);
+  if(WiFi.status()== WL_CONNECTED){
+    HTTPClient http;
+
+    String serverPath = serverName;
+    Serial.println(serverPath);
+    http.begin(serverName);
+    http.addHeader("Host", "dataloggerapi.azurewebsites.net");
+    http.addHeader("Content-Type", "application/json");
+    http.addHeader("accept", "*/*");
+
+    
+    int httpCode = http.POST(headerPacket + String(result) + String("\",\"dataType\": \"string\"}"));
+
+    String resultInfo;
+    if (httpCode > 0) {
+        Serial.println(http.getString());
+        resultInfo = "Success, HTTP Response Code: " + (String)httpCode;
+    } else {
+        resultInfo = "Error, HTTP Response Code: " + (String)httpCode;
+    }
+
+    http.end();
+    Serial.println(resultInfo);
+    Serial.print("Sent ");
+    Serial.println(headerPacket + String(result) + String("\",\"dataType\": \"string\"}"));
+    
+  
+
+  }
+  delay(100);
+
+
 }
 
 
@@ -105,7 +138,6 @@ uint8_t packet_is_OK()
 
   LT.startReadSXBuffer(0);               //start buffer read at location 0
 
-  char receivedBuffer[255];  // Buffer to store the received string
   LT.readBufferChar(receivedBuffer);  // Read the string data from the SX buffer
   
   RXPacketL = LT.endReadSXBuffer();  // End the buffer read
@@ -163,11 +195,26 @@ void led_Flash(uint16_t flashes, uint16_t delaymS)
 
 void setup()
 {
+  Serial.begin(9600);
+  WiFi.begin(ssid, password);
+  Serial.println("Connecting");
+  while(WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.print("Connected to WiFi network with IP Address: ");
+  Serial.println(WiFi.localIP());
+ 
+  Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
+
+
+
   pinMode(LED1, OUTPUT);
   // pinMode(LED_PIN, OUTPUT);
   led_Flash(2, 125);
 
-  Serial.begin(9600);
+
 
   SPI.begin();
 
@@ -189,6 +236,3 @@ void setup()
   Serial.println(F("Receiver ready"));
   Serial.println();
 }
-
-
-
