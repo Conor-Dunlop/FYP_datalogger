@@ -32,9 +32,11 @@
 #include <SX126XLT.h>
 #include "Settings.h"
 #include <WiFi.h>
+#include <time.h>
 #include <HTTPClient.h>
 #include <HardwareSerial.h>
-// #define LED_PIN 7
+#include <stdio.h>
+#include <fmt.h>
 
 SX126XLT LT;
 
@@ -48,22 +50,85 @@ int8_t  PacketSNR;               //signal to noise ratio of received packet
 String result = "";
 char receivedBuffer[255];  // Buffer to store the received string
 
-const char* ssid = "Space_isnt_real";
-const char* password = "fuckmoneygetbitches";
-
+const char* ssid = "Galaxy";
+const char* password = "yoyoyoyo";
+const char* ntpServer = "pool.ntp.org";
+// Define NTP Client to get time
 
 
 String serverName = "https://dataloggerapi.azurewebsites.net/logData";
-String headerPacket = "{\"loggerID\":\"Wifi_testing\",\"sensorID\":\"ALL\",\"timestamp\":\"2024-09-18T02:56:57.336Z\",\"data\":\"";
+// String headerPacket = "{\"loggerID\":\"Wifi_testing\",\"sensorID\":\"ALL\",\"timestamp\":\"2024-09-18T02:56:57.336Z\",\"data\":\"";
+// "loggerID\":\"Wifi_testing\",\"sensorID\":\"ALL\",\"timestamp\":\"2024-09-18T02:56:57.336Z\",\"data\":
+// "loggerID":"Wifi_testing","sensorID":"ALL","timestamp":"2024-09-19T02:04:20Z,"data":"
 
+
+String headerStart = "{\"loggerID\":\"Wifi_testing\",\"sensorID\":\"ALL\",\"timestamp\":\"";
+// String headerMiddle = "2024-09-18T02:56:57.336Z\"
+String headerEnd = "\",\"data\":\"";
 
 uint16_t led_status;
 
+// Variable to save current epoch time
+unsigned long epochTime; 
+
+// Function that gets current epoch time
+unsigned long getTime() {
+  time_t now;
+  struct tm timeinfo;
+  if (!getLocalTime(&timeinfo)) {
+    //Serial.println("Failed to obtain time");
+    return(0);
+  }
+  time(&now);
+  return now;
+}
+
+String printNowUsingCLibrary(time_t now) {
+  struct tm timeinfo;
+  gmtime_r(&now, &timeinfo);
+
+  int year = timeinfo.tm_year + 1900; // tm_year starts in year 1900 (!)
+  int month = timeinfo.tm_mon + 1; // tm_mon starts at 0 (!)
+  int day = timeinfo.tm_mday; // tm_mday starts at 1 though (!)
+  int hour = timeinfo.tm_hour;
+  int mins = timeinfo.tm_min;
+  int sec = timeinfo.tm_sec;
+  int day_of_week = timeinfo.tm_wday; // tm_wday starts with Sunday=0
+
+  char datebuffer[100];
+  sprintf(datebuffer, "%04d-%02d-%02dT%02d:%02d:%02dZ",
+            year, month, day, hour, mins, sec);
+            
+  // return fmt::format::sprintf("%04d-%02d-%02dT%02d:%02d:%02dZ",
+  //         year, month, day, hour, mins, sec);
+
+  return String(datebuffer);
+
+
+  // string date_time = ("%04d-%02d-%02dT%02d:%02d:%02dZ",
+  //     year, month, day, hour, mins, sec, dow_string);
+  // Serial.println(date_time);    
+  // Serial.println(F(" (C lib)"));
+
+
+}
 
 void loop()
 {
+  epochTime = getTime();
+
+  String currenttime = printNowUsingCLibrary(epochTime);
+  Serial.print(currenttime);
+  String headerMiddle = currenttime;
 
 
+  String headerPacket = headerStart + headerMiddle + headerEnd;
+
+  // Serial.print(headerPacket);
+  // Serial.print("Epoch Time: ");
+  // Serial.print(hour(epochTime));
+  // Serial.print(month());
+  // Serial.println(epochTime);
 
   // digitalWrite(LED?_PIN, HIGH);
   // Serial.println("trying to turn LED on ");  
@@ -120,6 +185,8 @@ void loop()
   
 
   }
+
+
   delay(100);
 
 
@@ -205,7 +272,8 @@ void setup()
   Serial.println("");
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
- 
+
+  configTime(43200, 46400, ntpServer);
   Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
 
 
