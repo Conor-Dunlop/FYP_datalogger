@@ -1,0 +1,36 @@
+Minutes 17/7/24
+Confirmed some parts
+How do we send stuff back to the boards? Where do we send it?
+LoraWAN two way comms
+Using nrf chip as gateway - send lte to that
+three gateway modes - C-whenever, A-small window, B-bigger window, something like that
+how do we connect to multiple connected to same gateway? just something in packet?
+Aloha-like mac
+Conor having software problems
+i2c not working - probably hardware issue
+think SPI is working - think it's working but Arduino receiving might not?
+Logan also tried to get SPI working - single direction worked, don't like being slave devices
+Can use uart instead of SPI
+Better to use uart or usart? depends on data speed, probably doesn't matter we'll just use uart
+STMcubed doesn't like pin stacking, need to write custom driver for uart
+Chloe got webapi
+Json over lorawan may not work - use short string, power issues
+Lora hat ordered
+Cellular and Lora combined.
+Will just use battery pack for now, power board coming
+Devkit doesn't have lora
+Have a gateway/access point, want own router for that
+Get a box to put everything in
+Logan able to import boards into blender so can visualize
+Need to get LTE to azure - won't be ip over LTE
+Real world test - use photoresistor so can wave hand over it
+Project inspection Thursday 10:30-12:00, Lui in lecture, need to change
+Think about what we can show for demo
+Order, Logan - Josh - Josh - Conor - Chloe
+Got about 8 weeks to finish everything - need to plan for that
+Update Gantt chart
+Get back on track
+What's plan B if this is completely unrealistic?
+real world - what's stopping it from working? what can you do to make it happen?
+throw money at the problem
+university time-rich cost-poor, companies time-poor cost-rich
